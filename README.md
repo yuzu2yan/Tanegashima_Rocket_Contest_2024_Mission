@@ -1,1 +1,1 @@
-# Tanegahima_Rocket_Contest_2024_Mission
+# Tanegashima_Rocket_Contest_2024_Mission
