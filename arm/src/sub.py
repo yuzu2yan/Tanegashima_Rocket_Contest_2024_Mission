@@ -1,13 +1,13 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from std_msgs.msg import Float64MultiArray
 
 class Listener(Node):
 
     def __init__(self):
         super().__init__('listener')
         self.subscription_ = self.create_subscription(
-            String, 'chatter', self.listener_callback, 10)
+            Float64MultiArray, 'chatter', self.listener_callback, 10)
         self.subscription_
 
     def listener_callback(self, msg):

@@ -8,8 +8,6 @@ REG_OLATA = 0x14 # GPA output latch register
 REG_OLATB = 0x15 # GPB output latch register
 
 # pigpio library : https://abyz.me.uk/rpi/pigpio/python.html
-# 6,7 上昇機構のモーター
-# 4,5 つかむ機構のモーター
 sample_switch = [9, 11]
 panto_switch = [17, 27]
 sepa_switch = [10, 22]
@@ -31,13 +29,13 @@ class Motor(object):
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0x00)
     
     def forward(self):
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00000010)
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00011001)                                                                              
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b10000001)
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00001001)                                                                              
         print("forward")
         
     def back(self):
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00000001)
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00100110)                                                                              
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b01000010)
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00000110)                                                                              
         print("back")
         
     def detect(self):
@@ -49,8 +47,8 @@ class Motor(object):
         print(Motor.pi.read(11))
         
     def turn(self):
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00000010)
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00101010) 
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b01000001)
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00001010)                                                                             
         print("turn")
         
     
@@ -58,16 +56,6 @@ class Motor(object):
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0x00)
         print("stop")
-        
-    def stuck(self):
-        Motor.back(self)
-        time.sleep(3)
-        Motor.turn_right(self)
-        time.sleep(1)
-        Motor.forward(self)
-        time.sleep(3)
-        Motor.stop(self)
-        print('Finish stuck processing')
         
     def sepa_mecha(self):
         # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
