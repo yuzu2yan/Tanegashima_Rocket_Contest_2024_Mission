@@ -1,0 +1,6 @@
+[submodule "arm/src/ros2_aruco"]
+	path = arm/src/ros2_aruco
+	url = https://github.com/JMU-ROBOTICS-VIVA/ros2_aruco
+[submodule "arm/src/chapter5"]
+	path = arm/src/chapter5
+	url = https://github.com/AI-Robot-Book/chapter5/
