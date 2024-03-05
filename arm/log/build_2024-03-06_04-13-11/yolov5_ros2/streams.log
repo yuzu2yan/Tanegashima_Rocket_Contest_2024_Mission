@@ -1,0 +1,59 @@
+[7.448s] Invoking command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/yolov5_ros2': PYTHONPATH=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/yolov5_ros2 build --build-base /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build install --record /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/install.log --install-scripts $base/lib/yolov5_ros2 --single-version-externally-managed
+[9.069s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[9.070s]   warnings.warn(
+[9.115s] running egg_info
+[9.128s] creating ../../../build/yolov5_ros2/yolov5_ros2.egg-info
+[9.129s] writing ../../../build/yolov5_ros2/yolov5_ros2.egg-info/PKG-INFO
+[9.133s] writing dependency_links to ../../../build/yolov5_ros2/yolov5_ros2.egg-info/dependency_links.txt
+[9.147s] writing entry points to ../../../build/yolov5_ros2/yolov5_ros2.egg-info/entry_points.txt
+[9.149s] writing requirements to ../../../build/yolov5_ros2/yolov5_ros2.egg-info/requires.txt
+[9.151s] writing top-level names to ../../../build/yolov5_ros2/yolov5_ros2.egg-info/top_level.txt
+[9.160s] writing manifest file '../../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'
+[9.163s] reading manifest file '../../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'
+[9.164s] adding license file 'LICENSE'
+[9.167s] writing manifest file '../../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'
+[9.167s] running build
+[9.168s] running build_py
+[9.169s] creating /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build
+[9.170s] creating /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib
+[9.180s] creating /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2
+[9.180s] copying yolov5_ros2/detector.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2
+[9.182s] copying yolov5_ros2/object_detection_srv.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2
+[9.183s] copying yolov5_ros2/object_detection_tf.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2
+[9.187s] copying yolov5_ros2/object_detection.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2
+[9.187s] copying yolov5_ros2/__init__.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2
+[9.189s] copying yolov5_ros2/detect.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2
+[9.189s] running install
+[9.190s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[9.193s]   warnings.warn(
+[9.198s] running install_lib
+[9.201s] creating /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2
+[9.202s] copying /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2/detector.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2
+[9.203s] copying /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2/object_detection_srv.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2
+[9.214s] copying /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2/object_detection_tf.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2
+[9.215s] copying /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2/object_detection.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2
+[9.216s] copying /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2/__init__.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2
+[9.216s] copying /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build/lib/yolov5_ros2/detect.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2
+[9.217s] byte-compiling /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2/detector.py to detector.cpython-310.pyc
+[9.218s] byte-compiling /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2/object_detection_srv.py to object_detection_srv.cpython-310.pyc
+[9.218s] byte-compiling /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2/object_detection_tf.py to object_detection_tf.cpython-310.pyc
+[9.219s] byte-compiling /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2/object_detection.py to object_detection.cpython-310.pyc
+[9.219s] byte-compiling /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2/__init__.py to __init__.cpython-310.pyc
+[9.220s] byte-compiling /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2/detect.py to detect.cpython-310.pyc
+[9.222s] running install_data
+[9.222s] creating /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/ament_index
+[9.223s] creating /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/ament_index/resource_index
+[9.226s] creating /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/ament_index/resource_index/packages
+[9.227s] copying resource/yolov5_ros2 -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/ament_index/resource_index/packages
+[9.227s] copying package.xml -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2
+[9.246s] creating /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2/launch
+[9.247s] running install_egg_info
+[9.249s] Copying ../../../build/yolov5_ros2/yolov5_ros2.egg-info to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2-1.0.0-py3.10.egg-info
+[9.252s] running install_scripts
+[9.395s] Installing detect script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/yolov5_ros2
+[9.398s] Installing detector script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/yolov5_ros2
+[9.402s] Installing object_detection script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/yolov5_ros2
+[9.410s] Installing object_detection_srv script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/yolov5_ros2
+[9.412s] Installing object_detection_tf script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/yolov5_ros2
+[9.417s] writing list of installed files to '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/install.log'
+[10.259s] Invoked command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/yolov5_ros2' returned '0': PYTHONPATH=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/yolov5_ros2 build --build-base /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build install --record /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/install.log --install-scripts $base/lib/yolov5_ros2 --single-version-externally-managed

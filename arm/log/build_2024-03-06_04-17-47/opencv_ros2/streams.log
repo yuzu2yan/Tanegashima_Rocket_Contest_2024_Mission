@@ -1,0 +1,33 @@
+[9.088s] Invoking command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/opencv_ros2': PYTHONPATH=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/opencv_ros2 build --build-base /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/build install --record /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/install.log --install-scripts $base/lib/opencv_ros2 --single-version-externally-managed
+[10.525s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[10.528s]   warnings.warn(
+[10.572s] running egg_info
+[10.575s] writing ../../../build/opencv_ros2/opencv_ros2.egg-info/PKG-INFO
+[10.577s] writing dependency_links to ../../../build/opencv_ros2/opencv_ros2.egg-info/dependency_links.txt
+[10.578s] writing entry points to ../../../build/opencv_ros2/opencv_ros2.egg-info/entry_points.txt
+[10.580s] writing requirements to ../../../build/opencv_ros2/opencv_ros2.egg-info/requires.txt
+[10.582s] writing top-level names to ../../../build/opencv_ros2/opencv_ros2.egg-info/top_level.txt
+[10.593s] reading manifest file '../../../build/opencv_ros2/opencv_ros2.egg-info/SOURCES.txt'
+[10.595s] adding license file 'LICENSE'
+[10.599s] writing manifest file '../../../build/opencv_ros2/opencv_ros2.egg-info/SOURCES.txt'
+[10.600s] running build
+[10.601s] running build_py
+[10.605s] running install
+[10.606s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[10.606s]   warnings.warn(
+[10.608s] running install_lib
+[10.618s] running install_data
+[10.621s] running install_egg_info
+[10.630s] removing '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/python3.10/site-packages/opencv_ros2-1.0.0-py3.10.egg-info' (and everything under it)
+[10.634s] Copying ../../../build/opencv_ros2/opencv_ros2.egg-info to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/python3.10/site-packages/opencv_ros2-1.0.0-py3.10.egg-info
+[10.641s] running install_scripts
+[10.746s] Installing aruco_node_tf script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+[10.747s] Installing canny_edge_detection script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+[10.748s] Installing challenge5_1_say_hello script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+[10.750s] Installing challenge5_2_cup_direction script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+[10.751s] Installing face_detection script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+[10.753s] Installing imgproc_opencv_ros script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+[10.754s] Installing qrcode_detector script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+[10.756s] Installing quiz5_1_smile_detection script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+[10.759s] writing list of installed files to '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/install.log'
+[10.989s] Invoked command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/opencv_ros2' returned '0': PYTHONPATH=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/opencv_ros2 build --build-base /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/build install --record /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/install.log --install-scripts $base/lib/opencv_ros2 --single-version-externally-managed

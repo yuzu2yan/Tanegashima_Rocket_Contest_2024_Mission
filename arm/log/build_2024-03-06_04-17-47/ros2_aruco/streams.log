@@ -1,0 +1,27 @@
+[8.794s] Invoking command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco': PYTHONPATH=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/build install --record /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/install.log --single-version-externally-managed
+[10.534s] running egg_info
+[10.543s] writing ../../../build/ros2_aruco/ros2_aruco.egg-info/PKG-INFO
+[10.547s] writing dependency_links to ../../../build/ros2_aruco/ros2_aruco.egg-info/dependency_links.txt
+[10.551s] writing entry points to ../../../build/ros2_aruco/ros2_aruco.egg-info/entry_points.txt
+[10.554s] writing requirements to ../../../build/ros2_aruco/ros2_aruco.egg-info/requires.txt
+[10.557s] writing top-level names to ../../../build/ros2_aruco/ros2_aruco.egg-info/top_level.txt
+[10.587s] reading manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[10.600s] writing manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[10.601s] running build
+[10.604s] running build_py
+[10.606s] copying ros2_aruco/transformations.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/build/lib/ros2_aruco
+[10.614s] running install
+[10.617s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[10.619s]   warnings.warn(
+[10.624s] running install_lib
+[10.631s] copying /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/build/lib/ros2_aruco/transformations.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+[10.641s] byte-compiling /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/transformations.py to transformations.cpython-310.pyc
+[10.706s] running install_data
+[10.712s] running install_egg_info
+[10.724s] removing '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco-0.1.0-py3.10.egg-info' (and everything under it)
+[10.727s] Copying ../../../build/ros2_aruco/ros2_aruco.egg-info to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco-0.1.0-py3.10.egg-info
+[10.731s] running install_scripts
+[10.823s] Installing aruco_generate_marker script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/ros2_aruco
+[10.824s] Installing aruco_node script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/ros2_aruco
+[10.826s] writing list of installed files to '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/install.log'
+[11.332s] Invoked command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco' returned '0': PYTHONPATH=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/build install --record /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/install.log --single-version-externally-managed

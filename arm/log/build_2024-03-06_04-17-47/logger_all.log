@@ -1,0 +1,340 @@
+[4.699s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[4.699s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff8fffc7c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8ffebca0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8ffebca0>>)
+[4.919s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.921s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm'
+[4.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.922s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.922s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.922s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.922s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.922s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.922s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.922s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.968s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.968s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.968s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.969s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.970s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.970s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.971s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.971s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.971s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.972s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.972s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.972s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.973s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.973s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.973s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.973s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.973s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.974s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.974s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.974s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.974s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.974s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.975s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.975s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.975s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.975s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extensions ['ignore', 'ignore_ament_install']
+[4.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extension 'ignore'
+[4.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extension 'ignore_ament_install'
+[4.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extensions ['colcon_pkg']
+[4.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extension 'colcon_pkg'
+[4.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extensions ['colcon_meta']
+[4.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extension 'colcon_meta'
+[4.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extensions ['ros']
+[4.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extension 'ros'
+[4.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extensions ['cmake', 'python']
+[4.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extension 'cmake'
+[4.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extension 'python'
+[4.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extensions ['python_setup_py']
+[4.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5) by extension 'python_setup_py'
+[4.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/opencv_ros2) by extensions ['ignore', 'ignore_ament_install']
+[4.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/opencv_ros2) by extension 'ignore'
+[4.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/opencv_ros2) by extension 'ignore_ament_install'
+[4.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/opencv_ros2) by extensions ['colcon_pkg']
+[4.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/opencv_ros2) by extension 'colcon_pkg'
+[4.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/opencv_ros2) by extensions ['colcon_meta']
+[4.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/opencv_ros2) by extension 'colcon_meta'
+[4.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/opencv_ros2) by extensions ['ros']
+[4.980s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/opencv_ros2) by extension 'ros'
+[4.989s] DEBUG:colcon.colcon_core.package_identification:Package 'src/chapter5/opencv_ros2' with type 'ros.ament_python' and name 'opencv_ros2'
+[4.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/yolov5_ros2) by extensions ['ignore', 'ignore_ament_install']
+[4.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/yolov5_ros2) by extension 'ignore'
+[4.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/yolov5_ros2) by extension 'ignore_ament_install'
+[4.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/yolov5_ros2) by extensions ['colcon_pkg']
+[4.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/yolov5_ros2) by extension 'colcon_pkg'
+[4.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/yolov5_ros2) by extensions ['colcon_meta']
+[4.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/yolov5_ros2) by extension 'colcon_meta'
+[4.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/yolov5_ros2) by extensions ['ros']
+[4.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/chapter5/yolov5_ros2) by extension 'ros'
+[4.993s] DEBUG:colcon.colcon_core.package_identification:Package 'src/chapter5/yolov5_ros2' with type 'ros.ament_python' and name 'yolov5_ros2'
+[4.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['ignore', 'ignore_ament_install']
+[4.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ignore'
+[4.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ignore_ament_install'
+[4.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['colcon_pkg']
+[4.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'colcon_pkg'
+[4.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['colcon_meta']
+[4.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'colcon_meta'
+[4.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['ros']
+[4.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ros'
+[4.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['cmake', 'python']
+[4.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'cmake'
+[4.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'python'
+[4.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['python_setup_py']
+[4.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'python_setup_py'
+[4.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['ignore', 'ignore_ament_install']
+[4.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ignore'
+[4.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ignore_ament_install'
+[4.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['colcon_pkg']
+[4.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'colcon_pkg'
+[4.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['colcon_meta']
+[4.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'colcon_meta'
+[4.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['ros']
+[5.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ros'
+[5.001s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_aruco/ros2_aruco' with type 'ros.ament_python' and name 'ros2_aruco'
+[5.002s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[5.002s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ignore'
+[5.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ignore_ament_install'
+[5.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['colcon_pkg']
+[5.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'colcon_pkg'
+[5.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['colcon_meta']
+[5.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'colcon_meta'
+[5.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['ros']
+[5.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ros'
+[5.006s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_aruco/ros2_aruco_interfaces' with type 'ros.ament_cmake' and name 'ros2_aruco_interfaces'
+[5.007s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extensions ['ignore', 'ignore_ament_install']
+[5.007s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extension 'ignore'
+[5.008s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extension 'ignore_ament_install'
+[5.008s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extensions ['colcon_pkg']
+[5.008s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extension 'colcon_pkg'
+[5.008s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extensions ['colcon_meta']
+[5.008s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extension 'colcon_meta'
+[5.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extensions ['ros']
+[5.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extension 'ros'
+[5.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extensions ['cmake', 'python']
+[5.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extension 'cmake'
+[5.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extension 'python'
+[5.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extensions ['python_setup_py']
+[5.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_arm) by extension 'python_setup_py'
+[5.010s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[5.010s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[5.010s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[5.010s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[5.010s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.428s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.575s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 289 installed packages in /opt/ros/humble
+[5.581s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[6.050s] Level 5:colcon.colcon_core.verb:set package 'opencv_ros2' build argument 'cmake_args' from command line to 'None'
+[6.050s] Level 5:colcon.colcon_core.verb:set package 'opencv_ros2' build argument 'cmake_target' from command line to 'None'
+[6.050s] Level 5:colcon.colcon_core.verb:set package 'opencv_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.050s] Level 5:colcon.colcon_core.verb:set package 'opencv_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[6.051s] Level 5:colcon.colcon_core.verb:set package 'opencv_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[6.051s] Level 5:colcon.colcon_core.verb:set package 'opencv_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[6.051s] Level 5:colcon.colcon_core.verb:set package 'opencv_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[6.051s] Level 5:colcon.colcon_core.verb:set package 'opencv_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[6.051s] Level 5:colcon.colcon_core.verb:set package 'opencv_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.051s] DEBUG:colcon.colcon_core.verb:Building package 'opencv_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2', 'merge_install': False, 'path': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/opencv_ros2', 'symlink_install': False, 'test_result_base': None}
+[6.121s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_args' from command line to 'None'
+[6.121s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_target' from command line to 'None'
+[6.121s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.121s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_clean_cache' from command line to 'False'
+[6.121s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_clean_first' from command line to 'False'
+[6.121s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_force_configure' from command line to 'False'
+[6.121s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'ament_cmake_args' from command line to 'None'
+[6.122s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'catkin_cmake_args' from command line to 'None'
+[6.122s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.122s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_aruco' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco', 'merge_install': False, 'path': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco', 'symlink_install': False, 'test_result_base': None}
+[6.190s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_args' from command line to 'None'
+[6.191s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_target' from command line to 'None'
+[6.191s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.191s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[6.191s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[6.191s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[6.191s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[6.191s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[6.191s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.192s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_aruco_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces', 'merge_install': False, 'path': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco_interfaces', 'symlink_install': False, 'test_result_base': None}
+[6.259s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros2' build argument 'cmake_args' from command line to 'None'
+[6.260s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros2' build argument 'cmake_target' from command line to 'None'
+[6.260s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.260s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[6.260s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[6.260s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[6.260s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[6.260s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[6.260s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.261s] DEBUG:colcon.colcon_core.verb:Building package 'yolov5_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2', 'merge_install': False, 'path': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/yolov5_ros2', 'symlink_install': False, 'test_result_base': None}
+[6.328s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[6.399s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[6.401s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/opencv_ros2' with build type 'ament_python'
+[6.401s] Level 1:colcon.colcon_core.shell:create_environment_hook('opencv_ros2', 'ament_prefix_path')
+[6.478s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[6.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/share/opencv_ros2/hook/ament_prefix_path.ps1'
+[6.482s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/share/opencv_ros2/hook/ament_prefix_path.dsv'
+[6.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/share/opencv_ros2/hook/ament_prefix_path.sh'
+[6.556s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.556s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.708s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco' with build type 'ament_python'
+[6.708s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco', 'ament_prefix_path')
+[6.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.ps1'
+[6.783s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.dsv'
+[6.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.sh'
+[6.855s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.855s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.007s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco_interfaces' with build type 'ament_cmake'
+[7.007s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco_interfaces'
+[7.080s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.080s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.231s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/yolov5_ros2' with build type 'ament_python'
+[7.232s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov5_ros2', 'ament_prefix_path')
+[7.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2/hook/ament_prefix_path.ps1'
+[7.305s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2/hook/ament_prefix_path.dsv'
+[7.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2/hook/ament_prefix_path.sh'
+[7.377s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.378s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.744s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/opencv_ros2'
+[8.815s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.815s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.182s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco'
+[10.256s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.256s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.426s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces -- -j4 -l4
+[12.153s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/yolov5_ros2'
+[12.245s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.246s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.646s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces -- -j4 -l4
+[13.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces
+[13.663s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco_interfaces)
+[13.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces
+[13.801s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces' for CMake module files
+[13.806s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces' for CMake config files
+[13.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'cmake_prefix_path')
+[13.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.ps1'
+[13.938s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.dsv'
+[13.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.sh'
+[13.945s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib'
+[13.946s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'ld_library_path_lib')
+[14.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.ps1'
+[14.088s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.dsv'
+[14.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.sh'
+[14.094s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/bin'
+[14.095s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/pkgconfig/ros2_aruco_interfaces.pc'
+[14.096s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/python3.10/site-packages'
+[14.099s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/bin'
+[14.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.ps1'
+[14.243s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv'
+[14.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.sh'
+[14.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.bash'
+[14.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.zsh'
+[14.260s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/colcon-core/packages/ros2_aruco_interfaces)
+[15.034s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco_interfaces)
+[15.210s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces' for CMake module files
+[15.216s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces' for CMake config files
+[15.221s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'cmake_prefix_path')
+[15.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.ps1'
+[15.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.dsv'
+[15.297s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.sh'
+[15.300s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib'
+[15.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'ld_library_path_lib')
+[15.371s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.ps1'
+[15.373s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.dsv'
+[15.375s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.sh'
+[15.377s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/bin'
+[15.378s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/pkgconfig/ros2_aruco_interfaces.pc'
+[15.379s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/python3.10/site-packages'
+[15.380s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/bin'
+[15.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.ps1'
+[15.451s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv'
+[15.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.sh'
+[15.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.bash'
+[15.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.zsh'
+[15.460s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/colcon-core/packages/ros2_aruco_interfaces)
+[15.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/yolov5_ros2': PYTHONPATH=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/yolov5_ros2 build --build-base /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build install --record /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/install.log --install-scripts $base/lib/yolov5_ros2 --single-version-externally-managed
+[15.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/opencv_ros2': PYTHONPATH=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/opencv_ros2 build --build-base /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/build install --record /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/install.log --install-scripts $base/lib/opencv_ros2 --single-version-externally-managed
+[15.504s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco': PYTHONPATH=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/build install --record /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/install.log --single-version-externally-managed
+[17.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/opencv_ros2' returned '0': PYTHONPATH=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/opencv_ros2 build --build-base /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/build install --record /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/install.log --install-scripts $base/lib/opencv_ros2 --single-version-externally-managed
+[17.515s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2' for CMake module files
+[17.518s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2' for CMake config files
+[17.522s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib'
+[17.523s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/bin'
+[17.523s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/pkgconfig/opencv_ros2.pc'
+[17.524s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/python3.10/site-packages'
+[17.525s] Level 1:colcon.colcon_core.shell:create_environment_hook('opencv_ros2', 'pythonpath')
+[17.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/share/opencv_ros2/hook/pythonpath.ps1'
+[17.706s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/share/opencv_ros2/hook/pythonpath.dsv'
+[17.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/share/opencv_ros2/hook/pythonpath.sh'
+[17.711s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/bin'
+[17.711s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opencv_ros2)
+[17.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/share/opencv_ros2/package.ps1'
+[17.783s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/share/opencv_ros2/package.dsv'
+[17.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/share/opencv_ros2/package.sh'
+[17.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/share/opencv_ros2/package.bash'
+[17.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/share/opencv_ros2/package.zsh'
+[17.791s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/share/colcon-core/packages/opencv_ros2)
+[17.798s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/yolov5_ros2' returned '0': PYTHONPATH=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/yolov5_ros2 build --build-base /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build install --record /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/install.log --install-scripts $base/lib/yolov5_ros2 --single-version-externally-managed
+[17.869s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2' for CMake module files
+[17.872s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2' for CMake config files
+[17.875s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib'
+[17.876s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/bin'
+[17.876s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/pkgconfig/yolov5_ros2.pc'
+[17.877s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages'
+[17.877s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov5_ros2', 'pythonpath')
+[17.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2/hook/pythonpath.ps1'
+[17.949s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2/hook/pythonpath.dsv'
+[17.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2/hook/pythonpath.sh'
+[17.954s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/bin'
+[17.954s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolov5_ros2)
+[18.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2/package.ps1'
+[18.024s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2/package.dsv'
+[18.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2/package.sh'
+[18.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2/package.bash'
+[18.031s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/yolov5_ros2/package.zsh'
+[18.033s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/share/colcon-core/packages/yolov5_ros2)
+[18.041s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco' returned '0': PYTHONPATH=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/build install --record /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/install.log --single-version-externally-managed
+[18.109s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco' for CMake module files
+[18.112s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco' for CMake config files
+[18.116s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib'
+[18.116s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/bin'
+[18.116s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/pkgconfig/ros2_aruco.pc'
+[18.117s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages'
+[18.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco', 'pythonpath')
+[18.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.ps1'
+[18.189s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.dsv'
+[18.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.sh'
+[18.193s] Level 1:colcon.colcon_core.environment:checking '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/bin'
+[18.194s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco)
+[18.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/share/ros2_aruco/package.ps1'
+[18.266s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/share/ros2_aruco/package.dsv'
+[18.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/share/ros2_aruco/package.sh'
+[18.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/share/ros2_aruco/package.bash'
+[18.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/share/ros2_aruco/package.zsh'
+[18.274s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/share/colcon-core/packages/ros2_aruco)
+[18.275s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[18.276s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[18.277s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[18.277s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[18.366s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[18.366s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[18.367s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[18.422s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[18.517s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/local_setup.ps1'
+[18.522s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/_local_setup_util_ps1.py'
+[18.528s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/setup.ps1'
+[18.611s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/local_setup.sh'
+[18.614s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/_local_setup_util_sh.py'
+[18.617s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/setup.sh'
+[18.689s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/local_setup.bash'
+[18.691s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/setup.bash'
+[18.762s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/local_setup.zsh'
+[18.764s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/setup.zsh'

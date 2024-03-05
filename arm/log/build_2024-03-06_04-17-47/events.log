@@ -1,0 +1,377 @@
+[0.000000] (-) TimerEvent: {}
+[0.001718] (opencv_ros2) JobQueued: {'identifier': 'opencv_ros2', 'dependencies': OrderedDict()}
+[0.001846] (ros2_aruco) JobQueued: {'identifier': 'ros2_aruco', 'dependencies': OrderedDict()}
+[0.002419] (ros2_aruco_interfaces) JobQueued: {'identifier': 'ros2_aruco_interfaces', 'dependencies': OrderedDict()}
+[0.002506] (yolov5_ros2) JobQueued: {'identifier': 'yolov5_ros2', 'dependencies': OrderedDict()}
+[0.002773] (opencv_ros2) JobStarted: {'identifier': 'opencv_ros2'}
+[0.098899] (-) TimerEvent: {}
+[0.199633] (-) TimerEvent: {}
+[0.300738] (-) TimerEvent: {}
+[0.308893] (ros2_aruco) JobStarted: {'identifier': 'ros2_aruco'}
+[0.401051] (-) TimerEvent: {}
+[0.502313] (-) TimerEvent: {}
+[0.604408] (-) TimerEvent: {}
+[0.608034] (ros2_aruco_interfaces) JobStarted: {'identifier': 'ros2_aruco_interfaces'}
+[0.704728] (-) TimerEvent: {}
+[0.805639] (-) TimerEvent: {}
+[0.832201] (yolov5_ros2) JobStarted: {'identifier': 'yolov5_ros2'}
+[0.905839] (-) TimerEvent: {}
+[1.007234] (-) TimerEvent: {}
+[1.108035] (-) TimerEvent: {}
+[1.208843] (-) TimerEvent: {}
+[1.309642] (-) TimerEvent: {}
+[1.410420] (-) TimerEvent: {}
+[1.511237] (-) TimerEvent: {}
+[1.611947] (-) TimerEvent: {}
+[1.712640] (-) TimerEvent: {}
+[1.813413] (-) TimerEvent: {}
+[1.914100] (-) TimerEvent: {}
+[2.014811] (-) TimerEvent: {}
+[2.115673] (-) TimerEvent: {}
+[2.216369] (-) TimerEvent: {}
+[2.317313] (-) TimerEvent: {}
+[2.418563] (-) TimerEvent: {}
+[2.519425] (-) TimerEvent: {}
+[2.620448] (-) TimerEvent: {}
+[2.721705] (-) TimerEvent: {}
+[2.822602] (-) TimerEvent: {}
+[2.923884] (-) TimerEvent: {}
+[3.024642] (-) TimerEvent: {}
+[3.125426] (-) TimerEvent: {}
+[3.226147] (-) TimerEvent: {}
+[3.326853] (-) TimerEvent: {}
+[3.427765] (-) TimerEvent: {}
+[3.528503] (-) TimerEvent: {}
+[3.629321] (-) TimerEvent: {}
+[3.730208] (-) TimerEvent: {}
+[3.831202] (-) TimerEvent: {}
+[3.931993] (-) TimerEvent: {}
+[4.009082] (ros2_aruco_interfaces) JobProgress: {'identifier': 'ros2_aruco_interfaces', 'progress': 'cmake'}
+[4.012610] (ros2_aruco_interfaces) JobProgress: {'identifier': 'ros2_aruco_interfaces', 'progress': 'build'}
+[4.015695] (ros2_aruco_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'astrum'), ('SSH_CLIENT', 'fe80::4fbf:9444:d34c:f09a%wlxe84e06ab1752 65212 22'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/astrum'), ('OLDPWD', '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'astrum'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/astrum/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('PWD', '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces'), ('SSH_CONNECTION', 'fe80::4fbf:9444:d34c:f09a%wlxe84e06ab1752 65212 fe80::8897:a070:9752:3a85%wlxe84e06ab1752 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.032177] (-) TimerEvent: {}
+[4.134548] (-) TimerEvent: {}
+[4.215443] (ros2_aruco_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_aruco_interfaces__rosidl_generator_c\x1b[0m\n'}
+[4.234785] (-) TimerEvent: {}
+[4.258694] (ros2_aruco_interfaces) StdoutLine: {'line': b'[  3%] Built target ros2_aruco_interfaces__cpp\n'}
+[4.282914] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 12%] Built target ros2_aruco_interfaces__rosidl_generator_c\n'}
+[4.320618] (ros2_aruco_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_aruco_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[4.330004] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_ros2_aruco_interfaces\n'}
+[4.335040] (-) TimerEvent: {}
+[4.339569] (ros2_aruco_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[4.369926] (ros2_aruco_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_aruco_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[4.408827] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 22%] Built target ros2_aruco_interfaces__rosidl_typesupport_cpp\n'}
+[4.410636] (ros2_aruco_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.435349] (-) TimerEvent: {}
+[4.436752] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 32%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.477995] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 41%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.482060] (ros2_aruco_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_aruco_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[4.499052] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 51%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[4.519130] (ros2_aruco_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_aruco_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[4.535554] (-) TimerEvent: {}
+[4.560526] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 61%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.583155] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 70%] Built target ros2_aruco_interfaces__rosidl_typesupport_c\n'}
+[4.635762] (-) TimerEvent: {}
+[4.682185] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 70%] Built target ros2_aruco_interfaces\n'}
+[4.735998] (-) TimerEvent: {}
+[4.785875] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 74%] Built target ros2_aruco_interfaces__py\n'}
+[4.835396] (ros2_aruco_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_aruco_interfaces__rosidl_generator_py\x1b[0m\n'}
+[4.836063] (-) TimerEvent: {}
+[4.907827] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 80%] Built target ros2_aruco_interfaces__rosidl_generator_py\n'}
+[4.936475] (-) TimerEvent: {}
+[4.970634] (ros2_aruco_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_aruco_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[4.977008] (ros2_aruco_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_aruco_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.997921] (ros2_aruco_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[5.036797] (-) TimerEvent: {}
+[5.063599] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 87%] Built target ros2_aruco_interfaces__rosidl_typesupport_c__pyext\n'}
+[5.073852] (ros2_aruco_interfaces) StdoutLine: {'line': b'[ 93%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[5.106539] (ros2_aruco_interfaces) StdoutLine: {'line': b'[100%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.137142] (-) TimerEvent: {}
+[5.237949] (-) TimerEvent: {}
+[5.338833] (-) TimerEvent: {}
+[5.439678] (-) TimerEvent: {}
+[5.540467] (-) TimerEvent: {}
+[5.641532] (-) TimerEvent: {}
+[5.743626] (-) TimerEvent: {}
+[5.846299] (-) TimerEvent: {}
+[5.949337] (-) TimerEvent: {}
+[5.989393] (ros2_aruco_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[5.992506] (ros2_aruco_interfaces) StdoutLine: {'line': b'writing ros2_aruco_interfaces.egg-info/PKG-INFO\n'}
+[5.994376] (ros2_aruco_interfaces) StdoutLine: {'line': b'writing dependency_links to ros2_aruco_interfaces.egg-info/dependency_links.txt\n'}
+[5.995893] (ros2_aruco_interfaces) StdoutLine: {'line': b'writing top-level names to ros2_aruco_interfaces.egg-info/top_level.txt\n'}
+[6.006674] (ros2_aruco_interfaces) StdoutLine: {'line': b"reading manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'\n"}
+[6.009585] (ros2_aruco_interfaces) StdoutLine: {'line': b"writing manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'\n"}
+[6.050334] (-) TimerEvent: {}
+[6.152182] (-) TimerEvent: {}
+[6.178774] (ros2_aruco_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_ros2_aruco_interfaces_egg\n'}
+[6.246014] (ros2_aruco_interfaces) CommandEnded: {'returncode': 0}
+[6.252397] (-) TimerEvent: {}
+[6.353520] (-) TimerEvent: {}
+[6.454497] (-) TimerEvent: {}
+[6.555395] (-) TimerEvent: {}
+[6.656456] (-) TimerEvent: {}
+[6.694587] (ros2_aruco_interfaces) JobProgress: {'identifier': 'ros2_aruco_interfaces', 'progress': 'install'}
+[6.741470] (ros2_aruco_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces'], 'cwd': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'astrum'), ('SSH_CLIENT', 'fe80::4fbf:9444:d34c:f09a%wlxe84e06ab1752 65212 22'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/astrum'), ('OLDPWD', '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'astrum'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/astrum/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('PWD', '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces'), ('SSH_CONNECTION', 'fe80::4fbf:9444:d34c:f09a%wlxe84e06ab1752 65212 fe80::8897:a070:9752:3a85%wlxe84e06ab1752 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.757097] (-) TimerEvent: {}
+[6.786697] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.788385] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ament_index/resource_index/rosidl_interfaces/ros2_aruco_interfaces\n'}
+[6.789851] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces\n'}
+[6.791461] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg\n'}
+[6.793044] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail\n'}
+[6.794778] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.h\n'}
+[6.796331] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.h\n'}
+[6.798346] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.h\n'}
+[6.799111] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.c\n'}
+[6.800732] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.802051] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/aruco_markers.h\n'}
+[6.803689] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/library_path.sh\n'}
+[6.805393] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/library_path.dsv\n'}
+[6.808074] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_c.so\n'}
+[6.810744] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces\n'}
+[6.812422] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg\n'}
+[6.813964] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail\n'}
+[6.815682] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_fastrtps_c.h\n'}
+[6.817097] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.819864] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[6.822533] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces\n'}
+[6.824072] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg\n'}
+[6.825582] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail\n'}
+[6.827335] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__traits.hpp\n'}
+[6.828801] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__builder.hpp\n'}
+[6.830229] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.hpp\n'}
+[6.831551] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/aruco_markers.hpp\n'}
+[6.832992] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces\n'}
+[6.834955] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg\n'}
+[6.836378] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail\n'}
+[6.837808] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/dds_fastrtps\n'}
+[6.839330] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.840781] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.843449] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.846169] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces\n'}
+[6.847688] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg\n'}
+[6.849365] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.850695] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail\n'}
+[6.852390] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_introspection_c.h\n'}
+[6.853773] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.c\n'}
+[6.856435] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[6.857086] (-) TimerEvent: {}
+[6.860829] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_c.so\n'}
+[6.863401] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces\n'}
+[6.864993] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg\n'}
+[6.866857] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail\n'}
+[6.868651] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.870214] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.cpp\n'}
+[6.872853] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[6.876665] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_cpp.so\n'}
+[6.879312] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/pythonpath.sh\n'}
+[6.880782] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/pythonpath.dsv\n'}
+[6.882236] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info\n'}
+[6.883945] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.886809] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.889538] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[6.892499] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[6.895384] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces\n'}
+[6.897090] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg\n'}
+[6.899108] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/_aruco_markers.py\n'}
+[6.900527] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/_aruco_markers_s.c\n'}
+[6.901899] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/__init__.py\n'}
+[6.903404] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.904824] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/libros2_aruco_interfaces__rosidl_generator_py.so\n'}
+[6.906320] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.907735] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/__init__.py\n'}
+[6.908981] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.910331] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[6.911708] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.913276] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.957468] (-) TimerEvent: {}
+[7.058587] (-) TimerEvent: {}
+[7.110229] (ros2_aruco_interfaces) StdoutLine: {'line': b"Listing '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces'...\n"}
+[7.111118] (ros2_aruco_interfaces) StdoutLine: {'line': b"Listing '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg'...\n"}
+[7.153729] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.158332] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.159075] (-) TimerEvent: {}
+[7.164358] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.168951] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_py.so\n'}
+[7.172147] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/msg/ArucoMarkers.idl\n'}
+[7.174399] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/msg/ArucoMarkers.msg\n'}
+[7.176311] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ament_index/resource_index/package_run_dependencies/ros2_aruco_interfaces\n'}
+[7.178345] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ament_index/resource_index/parent_prefix_path/ros2_aruco_interfaces\n'}
+[7.180308] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/ament_prefix_path.sh\n'}
+[7.182305] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/ament_prefix_path.dsv\n'}
+[7.184323] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/path.sh\n'}
+[7.186140] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/path.dsv\n'}
+[7.188103] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.bash\n'}
+[7.189822] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.sh\n'}
+[7.191690] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.zsh\n'}
+[7.193509] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.dsv\n'}
+[7.195351] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv\n'}
+[7.198638] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ament_index/resource_index/packages/ros2_aruco_interfaces\n'}
+[7.201167] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cExport.cmake\n'}
+[7.203343] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.205849] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[7.207896] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[7.210423] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cppExport.cmake\n'}
+[7.213114] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[7.215023] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[7.217510] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.219457] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.221787] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[7.223735] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.226274] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.228238] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.230650] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[7.232739] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.235539] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_pyExport.cmake\n'}
+[7.237548] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[7.239370] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[7.241282] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.243231] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.245108] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.247237] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.249038] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.250974] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.252472] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfacesConfig.cmake\n'}
+[7.253364] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfacesConfig-version.cmake\n'}
+[7.254187] (ros2_aruco_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.xml\n'}
+[7.259395] (-) TimerEvent: {}
+[7.267664] (ros2_aruco_interfaces) CommandEnded: {'returncode': 0}
+[7.359545] (-) TimerEvent: {}
+[7.460469] (-) TimerEvent: {}
+[7.561771] (-) TimerEvent: {}
+[7.662788] (-) TimerEvent: {}
+[7.764088] (-) TimerEvent: {}
+[7.866840] (-) TimerEvent: {}
+[7.968254] (-) TimerEvent: {}
+[8.069195] (-) TimerEvent: {}
+[8.170842] (-) TimerEvent: {}
+[8.273343] (-) TimerEvent: {}
+[8.375269] (-) TimerEvent: {}
+[8.480333] (-) TimerEvent: {}
+[8.582506] (-) TimerEvent: {}
+[8.684817] (-) TimerEvent: {}
+[8.788400] (-) TimerEvent: {}
+[8.893585] (-) TimerEvent: {}
+[8.995360] (-) TimerEvent: {}
+[9.062323] (ros2_aruco_interfaces) JobEnded: {'identifier': 'ros2_aruco_interfaces', 'rc': 0}
+[9.069200] (yolov5_ros2) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/yolov5_ros2', 'build', '--build-base', '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/build', 'install', '--record', '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/install.log', '--install-scripts', '$base/lib/yolov5_ros2', '--single-version-externally-managed'], 'cwd': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/yolov5_ros2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'astrum', 'SSH_CLIENT': 'fe80::4fbf:9444:d34c:f09a%wlxe84e06ab1752 65212 22', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/astrum', 'OLDPWD': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src', 'SSH_TTY': '/dev/pts/5', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ja_JP.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'astrum', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/astrum/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ja_JP.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'PWD': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2', 'SSH_CONNECTION': 'fe80::4fbf:9444:d34c:f09a%wlxe84e06ab1752 65212 fe80::8897:a070:9752:3a85%wlxe84e06ab1752 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'COLCON': '1'}, 'shell': False}
+[9.080471] (opencv_ros2) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/opencv_ros2', 'build', '--build-base', '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/build', 'install', '--record', '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/install.log', '--install-scripts', '$base/lib/opencv_ros2', '--single-version-externally-managed'], 'cwd': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/chapter5/opencv_ros2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'astrum', 'SSH_CLIENT': 'fe80::4fbf:9444:d34c:f09a%wlxe84e06ab1752 65212 22', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/astrum', 'OLDPWD': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src', 'SSH_TTY': '/dev/pts/5', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ja_JP.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'astrum', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/astrum/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ja_JP.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'PWD': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2', 'SSH_CONNECTION': 'fe80::4fbf:9444:d34c:f09a%wlxe84e06ab1752 65212 fe80::8897:a070:9752:3a85%wlxe84e06ab1752 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'COLCON': '1'}, 'shell': False}
+[9.094625] (ros2_aruco) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/ros2_aruco', 'build', '--build-base', '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/build', 'install', '--record', '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/install.log', '--single-version-externally-managed'], 'cwd': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'astrum', 'SSH_CLIENT': 'fe80::4fbf:9444:d34c:f09a%wlxe84e06ab1752 65212 22', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/astrum', 'OLDPWD': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src', 'SSH_TTY': '/dev/pts/5', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ja_JP.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'astrum', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/astrum/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ja_JP.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'PWD': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco', 'SSH_CONNECTION': 'fe80::4fbf:9444:d34c:f09a%wlxe84e06ab1752 65212 fe80::8897:a070:9752:3a85%wlxe84e06ab1752 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/prefix_override:/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'COLCON': '1'}, 'shell': False}
+[9.105450] (-) TimerEvent: {}
+[9.206721] (-) TimerEvent: {}
+[9.308798] (-) TimerEvent: {}
+[9.410641] (-) TimerEvent: {}
+[9.512372] (-) TimerEvent: {}
+[9.614269] (-) TimerEvent: {}
+[9.715733] (-) TimerEvent: {}
+[9.817443] (-) TimerEvent: {}
+[9.919341] (-) TimerEvent: {}
+[10.021029] (-) TimerEvent: {}
+[10.122585] (-) TimerEvent: {}
+[10.224309] (-) TimerEvent: {}
+[10.326099] (-) TimerEvent: {}
+[10.427793] (-) TimerEvent: {}
+[10.527560] (opencv_ros2) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[10.528400] (-) TimerEvent: {}
+[10.530186] (opencv_ros2) StderrLine: {'line': b'  warnings.warn(\n'}
+[10.553219] (yolov5_ros2) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[10.554318] (yolov5_ros2) StderrLine: {'line': b'  warnings.warn(\n'}
+[10.574116] (opencv_ros2) StdoutLine: {'line': b'running egg_info\n'}
+[10.577609] (opencv_ros2) StdoutLine: {'line': b'writing ../../../build/opencv_ros2/opencv_ros2.egg-info/PKG-INFO\n'}
+[10.579262] (opencv_ros2) StdoutLine: {'line': b'writing dependency_links to ../../../build/opencv_ros2/opencv_ros2.egg-info/dependency_links.txt\n'}
+[10.580793] (opencv_ros2) StdoutLine: {'line': b'writing entry points to ../../../build/opencv_ros2/opencv_ros2.egg-info/entry_points.txt\n'}
+[10.582182] (opencv_ros2) StdoutLine: {'line': b'writing requirements to ../../../build/opencv_ros2/opencv_ros2.egg-info/requires.txt\n'}
+[10.583883] (opencv_ros2) StdoutLine: {'line': b'writing top-level names to ../../../build/opencv_ros2/opencv_ros2.egg-info/top_level.txt\n'}
+[10.595050] (opencv_ros2) StdoutLine: {'line': b"reading manifest file '../../../build/opencv_ros2/opencv_ros2.egg-info/SOURCES.txt'\n"}
+[10.596978] (opencv_ros2) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[10.601791] (opencv_ros2) StdoutLine: {'line': b"writing manifest file '../../../build/opencv_ros2/opencv_ros2.egg-info/SOURCES.txt'\n"}
+[10.602770] (opencv_ros2) StdoutLine: {'line': b'running build\n'}
+[10.603473] (opencv_ros2) StdoutLine: {'line': b'running build_py\n'}
+[10.605518] (yolov5_ros2) StdoutLine: {'line': b'running egg_info\n'}
+[10.606970] (opencv_ros2) StdoutLine: {'line': b'running install\n'}
+[10.608118] (opencv_ros2) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[10.608752] (opencv_ros2) StderrLine: {'line': b'  warnings.warn(\n'}
+[10.609816] (opencv_ros2) StdoutLine: {'line': b'running install_lib\n'}
+[10.611647] (yolov5_ros2) StdoutLine: {'line': b'writing ../../../build/yolov5_ros2/yolov5_ros2.egg-info/PKG-INFO\n'}
+[10.613118] (yolov5_ros2) StdoutLine: {'line': b'writing dependency_links to ../../../build/yolov5_ros2/yolov5_ros2.egg-info/dependency_links.txt\n'}
+[10.614309] (yolov5_ros2) StdoutLine: {'line': b'writing entry points to ../../../build/yolov5_ros2/yolov5_ros2.egg-info/entry_points.txt\n'}
+[10.615599] (yolov5_ros2) StdoutLine: {'line': b'writing requirements to ../../../build/yolov5_ros2/yolov5_ros2.egg-info/requires.txt\n'}
+[10.616593] (yolov5_ros2) StdoutLine: {'line': b'writing top-level names to ../../../build/yolov5_ros2/yolov5_ros2.egg-info/top_level.txt\n'}
+[10.620080] (opencv_ros2) StdoutLine: {'line': b'running install_data\n'}
+[10.622973] (opencv_ros2) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.626276] (yolov5_ros2) StdoutLine: {'line': b"reading manifest file '../../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'\n"}
+[10.628597] (-) TimerEvent: {}
+[10.630906] (yolov5_ros2) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[10.632308] (opencv_ros2) StdoutLine: {'line': b"removing '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/python3.10/site-packages/opencv_ros2-1.0.0-py3.10.egg-info' (and everything under it)\n"}
+[10.633894] (yolov5_ros2) StdoutLine: {'line': b"writing manifest file '../../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'\n"}
+[10.635055] (yolov5_ros2) StdoutLine: {'line': b'running build\n'}
+[10.636035] (yolov5_ros2) StdoutLine: {'line': b'running build_py\n'}
+[10.636514] (opencv_ros2) StdoutLine: {'line': b'Copying ../../../build/opencv_ros2/opencv_ros2.egg-info to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/python3.10/site-packages/opencv_ros2-1.0.0-py3.10.egg-info\n'}
+[10.638199] (yolov5_ros2) StdoutLine: {'line': b'running install\n'}
+[10.639285] (yolov5_ros2) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[10.639883] (yolov5_ros2) StderrLine: {'line': b'  warnings.warn(\n'}
+[10.640811] (yolov5_ros2) StdoutLine: {'line': b'running install_lib\n'}
+[10.642873] (opencv_ros2) StdoutLine: {'line': b'running install_scripts\n'}
+[10.648941] (yolov5_ros2) StdoutLine: {'line': b'running install_data\n'}
+[10.652166] (yolov5_ros2) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.661818] (yolov5_ros2) StdoutLine: {'line': b"removing '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2-1.0.0-py3.10.egg-info' (and everything under it)\n"}
+[10.665926] (yolov5_ros2) StdoutLine: {'line': b'Copying ../../../build/yolov5_ros2/yolov5_ros2.egg-info to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/python3.10/site-packages/yolov5_ros2-1.0.0-py3.10.egg-info\n'}
+[10.674771] (yolov5_ros2) StdoutLine: {'line': b'running install_scripts\n'}
+[10.728796] (-) TimerEvent: {}
+[10.748377] (opencv_ros2) StdoutLine: {'line': b'Installing aruco_node_tf script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2\n'}
+[10.749687] (opencv_ros2) StdoutLine: {'line': b'Installing canny_edge_detection script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2\n'}
+[10.750807] (opencv_ros2) StdoutLine: {'line': b'Installing challenge5_1_say_hello script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2\n'}
+[10.752135] (opencv_ros2) StdoutLine: {'line': b'Installing challenge5_2_cup_direction script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2\n'}
+[10.753668] (opencv_ros2) StdoutLine: {'line': b'Installing face_detection script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2\n'}
+[10.755310] (opencv_ros2) StdoutLine: {'line': b'Installing imgproc_opencv_ros script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2\n'}
+[10.756657] (opencv_ros2) StdoutLine: {'line': b'Installing qrcode_detector script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2\n'}
+[10.758337] (opencv_ros2) StdoutLine: {'line': b'Installing quiz5_1_smile_detection script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2\n'}
+[10.761090] (opencv_ros2) StdoutLine: {'line': b"writing list of installed files to '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/install.log'\n"}
+[10.794237] (yolov5_ros2) StdoutLine: {'line': b'Installing detect script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/yolov5_ros2\n'}
+[10.796012] (yolov5_ros2) StdoutLine: {'line': b'Installing detector script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/yolov5_ros2\n'}
+[10.798453] (yolov5_ros2) StdoutLine: {'line': b'Installing object_detection script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/yolov5_ros2\n'}
+[10.801998] (yolov5_ros2) StdoutLine: {'line': b'Installing object_detection_srv script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/yolov5_ros2\n'}
+[10.804420] (yolov5_ros2) StdoutLine: {'line': b'Installing object_detection_tf script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/yolov5_ros2/lib/yolov5_ros2\n'}
+[10.808406] (yolov5_ros2) StdoutLine: {'line': b"writing list of installed files to '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/yolov5_ros2/install.log'\n"}
+[10.829243] (-) TimerEvent: {}
+[10.841639] (ros2_aruco) StdoutLine: {'line': b'running egg_info\n'}
+[10.851046] (ros2_aruco) StdoutLine: {'line': b'writing ../../../build/ros2_aruco/ros2_aruco.egg-info/PKG-INFO\n'}
+[10.855766] (ros2_aruco) StdoutLine: {'line': b'writing dependency_links to ../../../build/ros2_aruco/ros2_aruco.egg-info/dependency_links.txt\n'}
+[10.859512] (ros2_aruco) StdoutLine: {'line': b'writing entry points to ../../../build/ros2_aruco/ros2_aruco.egg-info/entry_points.txt\n'}
+[10.862302] (ros2_aruco) StdoutLine: {'line': b'writing requirements to ../../../build/ros2_aruco/ros2_aruco.egg-info/requires.txt\n'}
+[10.865517] (ros2_aruco) StdoutLine: {'line': b'writing top-level names to ../../../build/ros2_aruco/ros2_aruco.egg-info/top_level.txt\n'}
+[10.894731] (ros2_aruco) StdoutLine: {'line': b"reading manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'\n"}
+[10.907565] (ros2_aruco) StdoutLine: {'line': b"writing manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'\n"}
+[10.910030] (ros2_aruco) StdoutLine: {'line': b'running build\n'}
+[10.911597] (ros2_aruco) StdoutLine: {'line': b'running build_py\n'}
+[10.914404] (ros2_aruco) StdoutLine: {'line': b'copying ros2_aruco/transformations.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/build/lib/ros2_aruco\n'}
+[10.921549] (ros2_aruco) StdoutLine: {'line': b'running install\n'}
+[10.924657] (ros2_aruco) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[10.926966] (ros2_aruco) StderrLine: {'line': b'  warnings.warn(\n'}
+[10.929420] (-) TimerEvent: {}
+[10.932404] (ros2_aruco) StdoutLine: {'line': b'running install_lib\n'}
+[10.939545] (ros2_aruco) StdoutLine: {'line': b'copying /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/build/lib/ros2_aruco/transformations.py -> /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco\n'}
+[10.949794] (ros2_aruco) StdoutLine: {'line': b'byte-compiling /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/transformations.py to transformations.cpython-310.pyc\n'}
+[10.990135] (opencv_ros2) CommandEnded: {'returncode': 0}
+[11.014436] (ros2_aruco) StdoutLine: {'line': b'running install_data\n'}
+[11.020324] (ros2_aruco) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.032198] (ros2_aruco) StdoutLine: {'line': b"removing '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[11.033793] (-) TimerEvent: {}
+[11.035362] (ros2_aruco) StdoutLine: {'line': b'Copying ../../../build/ros2_aruco/ros2_aruco.egg-info to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco-0.1.0-py3.10.egg-info\n'}
+[11.039841] (ros2_aruco) StdoutLine: {'line': b'running install_scripts\n'}
+[11.131690] (ros2_aruco) StdoutLine: {'line': b'Installing aruco_generate_marker script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/ros2_aruco\n'}
+[11.132446] (ros2_aruco) StdoutLine: {'line': b'Installing aruco_node script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco/lib/ros2_aruco\n'}
+[11.133937] (-) TimerEvent: {}
+[11.134854] (ros2_aruco) StdoutLine: {'line': b"writing list of installed files to '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco/install.log'\n"}
+[11.234512] (-) TimerEvent: {}
+[11.337663] (-) TimerEvent: {}
+[11.392711] (opencv_ros2) JobEnded: {'identifier': 'opencv_ros2', 'rc': 0}
+[11.397006] (yolov5_ros2) CommandEnded: {'returncode': 0}
+[11.437807] (-) TimerEvent: {}
+[11.538819] (-) TimerEvent: {}
+[11.635336] (yolov5_ros2) JobEnded: {'identifier': 'yolov5_ros2', 'rc': 0}
+[11.639361] (-) TimerEvent: {}
+[11.640499] (ros2_aruco) CommandEnded: {'returncode': 0}
+[11.739554] (-) TimerEvent: {}
+[11.841423] (-) TimerEvent: {}
+[11.876526] (ros2_aruco) JobEnded: {'identifier': 'ros2_aruco', 'rc': 0}
+[11.879844] (-) EventReactorShutdown: {}

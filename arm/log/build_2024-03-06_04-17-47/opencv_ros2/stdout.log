@@ -1,0 +1,27 @@
+running egg_info
+writing ../../../build/opencv_ros2/opencv_ros2.egg-info/PKG-INFO
+writing dependency_links to ../../../build/opencv_ros2/opencv_ros2.egg-info/dependency_links.txt
+writing entry points to ../../../build/opencv_ros2/opencv_ros2.egg-info/entry_points.txt
+writing requirements to ../../../build/opencv_ros2/opencv_ros2.egg-info/requires.txt
+writing top-level names to ../../../build/opencv_ros2/opencv_ros2.egg-info/top_level.txt
+reading manifest file '../../../build/opencv_ros2/opencv_ros2.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../../build/opencv_ros2/opencv_ros2.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/python3.10/site-packages/opencv_ros2-1.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../../build/opencv_ros2/opencv_ros2.egg-info to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/python3.10/site-packages/opencv_ros2-1.0.0-py3.10.egg-info
+running install_scripts
+Installing aruco_node_tf script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+Installing canny_edge_detection script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+Installing challenge5_1_say_hello script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+Installing challenge5_2_cup_direction script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+Installing face_detection script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+Installing imgproc_opencv_ros script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+Installing qrcode_detector script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+Installing quiz5_1_smile_detection script to /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/opencv_ros2/lib/opencv_ros2
+writing list of installed files to '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/opencv_ros2/install.log'

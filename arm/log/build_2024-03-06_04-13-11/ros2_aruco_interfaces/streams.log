@@ -1,0 +1,229 @@
+[3.265s] Invoking command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco_interfaces -DCMAKE_INSTALL_PREFIX=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces
+[4.287s] -- The C compiler identification is GNU 11.4.0
+[5.031s] -- The CXX compiler identification is GNU 11.4.0
+[5.104s] -- Detecting C compiler ABI info
+[5.587s] -- Detecting C compiler ABI info - done
+[5.617s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.623s] -- Detecting C compile features
+[5.628s] -- Detecting C compile features - done
+[5.649s] -- Detecting CXX compiler ABI info
+[6.122s] -- Detecting CXX compiler ABI info - done
+[6.155s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.157s] -- Detecting CXX compile features
+[6.160s] -- Detecting CXX compile features - done
+[6.202s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[7.366s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[8.333s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[8.757s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[8.815s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[8.900s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[9.029s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.206s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.045s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[11.567s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[13.533s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[14.289s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[14.399s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[14.423s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[14.549s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[14.550s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[14.550s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[14.550s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[14.653s] -- Found PythonExtra: .so  
+[14.940s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[15.176s] -- Added test 'copyright' to check source files copyright and LICENSE
+[15.191s] -- Added test 'lint_cmake' to check CMake code style
+[15.199s] -- Added test 'xmllint' to check XML markup files
+[15.219s] -- Configuring done
+[15.421s] -- Generating done
+[15.436s] -- Build files have been written to: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces
+[15.479s] Invoked command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/src/ros2_aruco/ros2_aruco_interfaces -DCMAKE_INSTALL_PREFIX=/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces
+[15.488s] Invoking command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces -- -j4 -l4
+[15.658s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[15.701s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[15.738s] [  6%] Built target ament_cmake_python_copy_ros2_aruco_interfaces
+[17.036s] [  6%] Built target ros2_aruco_interfaces__cpp
+[17.085s] [  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[17.088s] [ 12%] [32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.c.o[0m
+[17.094s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[17.501s] running egg_info
+[17.506s] creating ros2_aruco_interfaces.egg-info
+[17.508s] writing ros2_aruco_interfaces.egg-info/PKG-INFO
+[17.511s] writing dependency_links to ros2_aruco_interfaces.egg-info/dependency_links.txt
+[17.514s] writing top-level names to ros2_aruco_interfaces.egg-info/top_level.txt
+[17.516s] writing manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'
+[17.528s] reading manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'
+[17.533s] writing manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'
+[17.596s] [ 19%] [32m[1mLinking C shared library libros2_aruco_interfaces__rosidl_generator_c.so[0m
+[17.731s] [ 19%] Built target ament_cmake_python_build_ros2_aruco_interfaces_egg
+[17.792s] [ 22%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[17.838s] [ 22%] Built target ros2_aruco_interfaces__rosidl_generator_c
+[17.894s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[18.489s] [ 29%] [32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_aruco_interfaces/msg/aruco_markers__type_support.cpp.o[0m
+[18.609s] [ 32%] [32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_aruco_interfaces/msg/detail/dds_fastrtps/aruco_markers__type_support.cpp.o[0m
+[19.218s] [ 35%] [32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.cpp.o[0m
+[19.344s] [ 38%] [32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support_c.cpp.o[0m
+[20.517s] [ 41%] [32m[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_cpp.so[0m
+[20.765s] [ 41%] Built target ros2_aruco_interfaces__rosidl_typesupport_cpp
+[20.831s] [ 45%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[21.797s] [ 48%] [32m[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[21.997s] [ 51%] [32m[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[22.294s] [ 51%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c
+[22.373s] [ 54%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[22.475s] [ 54%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp
+[22.491s] [ 58%] [32m[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[22.511s] [ 61%] [32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.c.o[0m
+[22.808s] [ 64%] [32m[1mLinking C shared library libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so[0m
+[22.862s] [ 64%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_cpp
+[22.947s] [ 64%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c
+[23.463s] [ 67%] [32mBuilding CXX object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_aruco_interfaces/msg/aruco_markers__type_support.cpp.o[0m
+[23.624s] [ 70%] [32m[1mLinking CXX shared library libros2_aruco_interfaces__rosidl_typesupport_c.so[0m
+[23.786s] [ 70%] Built target ros2_aruco_interfaces__rosidl_typesupport_c
+[23.872s] [ 70%] Built target ros2_aruco_interfaces
+[23.959s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[25.236s] [ 74%] Built target ros2_aruco_interfaces__py
+[25.322s] [ 77%] [32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros2_aruco_interfaces/msg/_aruco_markers_s.c.o[0m
+[26.006s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/ros2_aruco_interfaces/libros2_aruco_interfaces__rosidl_generator_py.so[0m
+[26.193s] [ 80%] Built target ros2_aruco_interfaces__rosidl_generator_py
+[26.286s] [ 83%] [32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[26.288s] [ 87%] [32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[26.289s] [ 90%] [32mBuilding C object CMakeFiles/ros2_aruco_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[26.847s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[26.849s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[26.852s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[27.146s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[27.148s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c__pyext
+[27.152s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_c__pyext
+[27.193s] Invoked command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces -- -j4 -l4
+[27.541s] Invoking command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces
+[27.570s] -- Install configuration: ""
+[27.571s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ament_index/resource_index/rosidl_interfaces/ros2_aruco_interfaces
+[27.573s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces
+[27.573s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg
+[27.574s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail
+[27.575s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.h
+[27.576s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.h
+[27.578s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.h
+[27.579s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__functions.c
+[27.580s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_generator_c__visibility_control.h
+[27.582s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/aruco_markers.h
+[27.584s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/library_path.sh
+[27.585s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/library_path.dsv
+[27.587s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_c.so
+[27.589s] -- Set runtime path of "/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_c.so" to ""
+[27.590s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces
+[27.590s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg
+[27.590s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail
+[27.591s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_fastrtps_c.h
+[27.593s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[27.594s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.so
+[27.597s] -- Set runtime path of "/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[27.598s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces
+[27.598s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg
+[27.598s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail
+[27.599s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__traits.hpp
+[27.601s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__builder.hpp
+[27.602s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__struct.hpp
+[27.603s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/aruco_markers.hpp
+[27.604s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces
+[27.605s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg
+[27.605s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail
+[27.606s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/dds_fastrtps
+[27.607s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_fastrtps_cpp.hpp
+[27.608s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[27.610s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[27.613s] -- Set runtime path of "/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[27.614s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces
+[27.614s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg
+[27.615s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[27.616s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail
+[27.616s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_introspection_c.h
+[27.618s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.c
+[27.620s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so
+[27.622s] -- Set runtime path of "/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[27.623s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_c.so
+[27.625s] -- Set runtime path of "/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_c.so" to ""
+[27.626s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces
+[27.626s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg
+[27.627s] -- Up-to-date: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail
+[27.627s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__rosidl_typesupport_introspection_cpp.hpp
+[27.629s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/include/ros2_aruco_interfaces/ros2_aruco_interfaces/msg/detail/aruco_markers__type_support.cpp
+[27.630s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so
+[27.633s] -- Set runtime path of "/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[27.634s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_cpp.so
+[27.636s] -- Set runtime path of "/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_typesupport_cpp.so" to ""
+[27.637s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/pythonpath.sh
+[27.638s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/pythonpath.dsv
+[27.640s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info
+[27.641s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/dependency_links.txt
+[27.642s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/SOURCES.txt
+[27.644s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/top_level.txt
+[27.645s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces-0.1.0-py3.10.egg-info/PKG-INFO
+[27.647s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces
+[27.647s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg
+[27.648s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/_aruco_markers.py
+[27.649s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/_aruco_markers_s.c
+[27.651s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/__init__.py
+[27.653s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[27.654s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/libros2_aruco_interfaces__rosidl_generator_py.so
+[27.655s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[27.657s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/__init__.py
+[27.658s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[27.660s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/_ros2_aruco_interfaces_s.ep.rosidl_typesupport_c.c
+[27.661s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[27.663s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[27.820s] Listing '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces'...
+[27.821s] Compiling '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/__init__.py'...
+[27.822s] Listing '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg'...
+[27.823s] Compiling '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/__init__.py'...
+[27.824s] Compiling '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/msg/_aruco_markers.py'...
+[27.846s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[27.849s] -- Set runtime path of "/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[27.851s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[27.855s] -- Set runtime path of "/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[27.856s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[27.860s] -- Set runtime path of "/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages/ros2_aruco_interfaces/ros2_aruco_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[27.860s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_py.so
+[27.863s] -- Set runtime path of "/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/lib/libros2_aruco_interfaces__rosidl_generator_py.so" to ""
+[27.864s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/msg/ArucoMarkers.idl
+[27.865s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/msg/ArucoMarkers.msg
+[27.867s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ament_index/resource_index/package_run_dependencies/ros2_aruco_interfaces
+[27.869s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ament_index/resource_index/parent_prefix_path/ros2_aruco_interfaces
+[27.870s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/ament_prefix_path.sh
+[27.872s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/ament_prefix_path.dsv
+[27.873s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/path.sh
+[27.874s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/environment/path.dsv
+[27.876s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.bash
+[27.877s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.sh
+[27.878s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.zsh
+[27.880s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/local_setup.dsv
+[27.881s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv
+[27.883s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ament_index/resource_index/packages/ros2_aruco_interfaces
+[27.884s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cExport.cmake
+[27.886s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cExport-noconfig.cmake
+[27.888s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[27.890s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[27.891s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_cppExport.cmake
+[27.893s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[27.895s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[27.897s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[27.899s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[27.900s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cExport.cmake
+[27.902s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[27.904s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[27.905s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[27.907s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cppExport.cmake
+[27.909s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[27.911s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_pyExport.cmake
+[27.912s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/export_ros2_aruco_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[27.914s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake-extras.cmake
+[27.915s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[27.917s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[27.918s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[27.920s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[27.921s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[27.923s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[27.924s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfacesConfig.cmake
+[27.925s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/cmake/ros2_aruco_interfacesConfig-version.cmake
+[27.927s] -- Installing: /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.xml
+[27.935s] Invoked command in '/home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/astrum/Tanegashima_Rocket_Contest_2024_Mission/arm/build/ros2_aruco_interfaces
