@@ -10,9 +10,9 @@ REG_OLATB = 0x15 # GPB output latch register
 # pigpio library : https://abyz.me.uk/rpi/pigpio/python.html
 # 6,7 上昇機構のモーター
 # 4,5 つかむ機構のモーター
-sample_switch = [11, 13]
-panto_switch = [22, 27] # down, rise
-sepa_switch = [9, 10]
+sample_switch = [19, 26]
+panto_switch = [9, 10] # down, rise
+sepa_switch = [13, 11] # sepa down
 
 class Motor(object):
     def __init__(self):
@@ -31,21 +31,36 @@ class Motor(object):
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0x00)
     
     def forward(self):
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00001010)
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00101000)                                                                              
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00000110)
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00000110)                                                                              
         print("forward")
         
+    def back(self):
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00001001)
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00001001)                                                                              
+        print("back")
+        
+    def turn_right(self):
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00001010)
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00000101) 
+        print("turn right")
+    
+    def turn_left(self):
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00000101)
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00001010) 
+        print("turn left")
+        
     def detect(self):
-        print(Motor.pi.read(27)) # panto inner
-        print(Motor.pi.read(22)) # panto outer
-        print(Motor.pi.read(10)) # close
-        print(Motor.pi.read(9)) # sepa
-        print(Motor.pi.read(11)) # sample
-        print(Motor.pi.read(13)) # sample
+        print(Motor.pi.read(11)) # close
+        print(Motor.pi.read(13)) # sepa
+        print(Motor.pi.read(10)) # down 
+        print(Motor.pi.read(9)) # rising
+        print(Motor.pi.read(19)) # sample
+        print(Motor.pi.read(26)) # sample
         
     def arm_sep(self):
         while Motor.pi.read(sepa_switch[0]) == 0:
-            Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00100000)
+            Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010000)
         print("separated")
         
     def grabing(self):
@@ -53,19 +68,19 @@ class Motor(object):
             if Motor.pi.read(sepa_switch[1]) == 1:
                 print("no hit")
                 break
-            Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010000)
+            Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00100000)
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
         print("grabing sampling")
 
     def rising_arm(self):
         while Motor.pi.read(panto_switch[0]) == 0:
-            Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b01000000)
+            Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b10000000)
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
         print("rised arm")
     
     def down_arm(self):
         while Motor.pi.read(panto_switch[1]) == 0:
-            Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b10000000)
+            Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b01000000)
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
         print("downed arm")
     
@@ -74,39 +89,6 @@ class Motor(object):
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0x00)
         print("stop")
         
-    def turn_right(self):
-        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x36)
-        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0x00)
-        # print("turn right")
-        print(Motor.pi.read(17))
-        print(Motor.pi.read(27))
-        print(Motor.pi.read(22))
-        print(Motor.pi.read(10))
-    
-    def turn_left(self):
-        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
-        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0x36)
-        print("turn left")
-        
-    def stuck(self):
-        Motor.back(self)
-        time.sleep(3)
-        Motor.turn_right(self)
-        time.sleep(1)
-        Motor.forward(self)
-        time.sleep(3)
-        Motor.stop(self)
-        print('Finish stuck processing')
-        
-    def sepa_mecha(self):
-        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
-        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0x08)
-        print("Separation mechanism activated")
-        
-    # def attach_para(self):
-        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x08)
-        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0x00)
-        
 
 if __name__ == '__main__':
     drive = Motor()
@@ -114,6 +96,12 @@ if __name__ == '__main__':
         c = input('Enter char : ')
         if c == 'w':
             drive.forward()
+        elif c == 'b':
+            drive.back()
+        elif c == 'ri':
+            drive.turn_right()
+        elif c == 'le':
+            drive.turn_left()
         elif c == 'd':
             drive.detect()
         elif c == 's':
@@ -126,8 +114,6 @@ if __name__ == '__main__':
             drive.rising_arm()
         elif c == 'o':
             drive.down_arm()
-        # elif c == 'para':
-        #     drive.attach_para()
         elif c == 'z':
             break
         else:
