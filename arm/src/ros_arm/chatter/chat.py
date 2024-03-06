@@ -5,23 +5,22 @@ from std_msgs.msg import Int32
 class Arm_Node(Node):
 
     def __init__(self):
+        self.num = 0
         super().__init__('node_arm')
-        self.publisher_ = self.create_publisher(Int32, 'number', 10)
-        self.subscription = self.create_subscription(Int32, 'number', self.number_callback, 10)
+        self.publisher_ = self.create_publisher(Int32, 'arm_pub', 10)
+        self.timer_ = self.create_timer(0.5, self.send_message(self))
+        self.subscription = self.create_subscription(Int32, 'arm_sub', self.receive_message, 10)
         self.subscription
-        self.counter = 0
 
-    def number_callback(self, msg):
+    def receive_message(self, msg):
         self.get_logger().info('Received: "%s"' % msg.data)
         if msg.data == 1:
-            self.counter += 1
-            if self.counter % 2 == 0:
-                self.send_message(2)
-                self.get_logger().info('Sent: "2"')
+            self.num += 1
+            self.get_logger().info('Sent:', msg.data)
 
-    def send_message(self, number):
+    def send_message(self):
         msg = Int32()
-        msg.data = number
+        msg.data = self.num
         self.publisher_.publish(msg)
         self.get_logger().info('Sent: "%s"' % msg.data)
 
