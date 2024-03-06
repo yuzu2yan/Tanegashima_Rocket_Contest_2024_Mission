@@ -10,7 +10,7 @@ class Truck_Node(Node):
         self.publisher_ = self.create_publisher(Int32, 'truck_pub', 10)
         self.timer_ = self.create_timer(0.5, self.send_message)
         self.subscription = self.create_subscription(Int32, 'truck_sub', self.receive_message, 10)
-        self.subscription_
+        self.subscription
 
     def receive_message(self, msg):
         self.get_logger().info('Received: "%s"' % msg.data)
