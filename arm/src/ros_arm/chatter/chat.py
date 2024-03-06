@@ -6,9 +6,9 @@ class SubscriberNode(Node):
 
     def __init__(self):
         super().__init__('subscriber_node')
-        self.subscription = self.create_subscription(Int32, 'number', self.number_callback, 10)
+        self.subscription = self.create_subscription(Int32, 'chatter', self.number_callback, 10)
         self.subscription  # subscriptionを破棄しないようにするために変数に割り当てる
-        self.publisher_ = self.create_publisher(Int32, 'number', 10)
+        self.publisher_ = self.create_publisher(Int32, 'chatter', 10)
         self.stop_publishing = False  # パブリッシュ停止フラグ
 
     def number_callback(self, msg):

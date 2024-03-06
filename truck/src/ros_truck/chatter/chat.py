@@ -6,7 +6,7 @@ class PublisherNode(Node):
 
     def __init__(self):
         super().__init__('publisher_node')
-        self.publisher_ = self.create_publisher(Int32, 'number', 10)
+        self.publisher_ = self.create_publisher(Int32, 'chatter', 10)
         self.timer = self.create_timer(1.0, self.publish_number)  # 1秒ごとに数値1をパブリッシュ
 
     def publish_number(self):
