@@ -8,16 +8,15 @@ class Arm_Node(Node):
         self.num = 0
         super().__init__('node_arm')
         self.publisher_ = self.create_publisher(Int32, 'arm_pub', 10)
-        self.timer_ = self.create_timer(0.5, self.send_message)
-        self.subscription = self.create_subscription(Int32, 'arm_sub', self.receive_message, 10)
+        self.timer_ = self.create_timer(0.5, self.timer_callback)
+        self.subscription = self.create_subscription(Int32, 'arm_sub', self.listener_callback, 10)
         self.subscription
 
-    def receive_message(self, msg):
+    def listener_callback(self, msg):
         self.get_logger().info('Received: "%s"' % msg.data)
-        if msg.data == 1:
-            self.num += 1
+        self.num += 1
 
-    def send_message(self):
+    def timer_callback(self):
         msg = Int32()
         msg.data = self.num
         self.publisher_.publish(msg)
