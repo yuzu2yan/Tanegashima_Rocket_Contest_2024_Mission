@@ -32,5 +32,7 @@ if __name__ == '__main__':
     rclpy.init()
     listener = Listener()
     rclpy.spin(listener)
+    talker = Talker()
+    rclpy.spin(talker)
     rclpy.shutdown()
 
