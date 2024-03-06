@@ -7,6 +7,7 @@ class ChatNode(Node):
     def __init__(self, node_name):
         super().__init__(node_name)
         self.publisher_ = self.create_publisher(Int32, 'chatter', 10)
+        self.timer_ = None
         self.subscription = self.create_subscription(Int32, 'chatter', self.listener_callback, 10)
         self.get_logger().info("Chat Node initialized")
 
@@ -20,8 +21,7 @@ class ChatNode(Node):
 
 def arm_talker(chat_node, rclpy):
     if rclpy.ok():
-        chat_node.setup_timer(0.5)
-        chat_node.send_message(2)
+        chat_node.timer_ = chat_node.create_timer(0.5, chat_node.send_message(2))
         rclpy.spin(chat_node)
     chat_node.destroy_node()
 

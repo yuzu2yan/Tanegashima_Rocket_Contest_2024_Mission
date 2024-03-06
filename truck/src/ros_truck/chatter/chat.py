@@ -21,8 +21,7 @@ class ChatNode(Node):
 
 def truck_talker(chat_node, rclpy):
     if rclpy.ok():
-        chat_node.setup_timer(0.5)
-        chat_node.send_message(1)
+        chat_node.timer_ = chat_node.create_timer(0.5, chat_node.send_message(1))
         rclpy.spin(chat_node)
     chat_node.destroy_node()
 
