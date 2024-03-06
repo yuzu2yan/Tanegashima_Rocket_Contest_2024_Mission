@@ -8,7 +8,7 @@ class Arm_Node(Node):
         self.num = 0
         super().__init__('node_arm')
         self.publisher_ = self.create_publisher(Int32, 'arm_pub', 10)
-        self.timer_ = self.create_timer(0.5, self.send_message(self.num))
+        self.timer_ = self.create_timer(0.5, self.send_message(self))
         self.subscription = self.create_subscription(Int32, 'arm_sub', self.receive_message, 10)
         self.subscription
 
