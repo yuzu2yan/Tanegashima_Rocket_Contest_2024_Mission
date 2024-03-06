@@ -59,8 +59,10 @@ class Motor(object):
         print(Motor.pi.read(26)) # sample
         
     def arm_sep(self):
-        while Motor.pi.read(sepa_switch[0]) == 0:
-            Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010000)
+        # while Motor.pi.read(sepa_switch[0]) == 0:
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010000)
+        time.sleep(2)
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
         print("separated")
         
     def grabing(self):

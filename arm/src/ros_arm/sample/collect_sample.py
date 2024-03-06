@@ -17,6 +17,8 @@ class ArucoPoseSubscriber(Node):
             10)
         self.subscription  # prevent unused variable warning
         self.drive = motor.Motor()
+        self.drive.stop()
+        self.drive.arm_sep()
 
     def aruco_pose_callback(self, msg):
         # アルコマーカーの位置と姿勢情報を取得
@@ -43,6 +45,10 @@ class ArucoPoseSubscriber(Node):
             else:
                 print("stop")
                 self.drive.stop()
+                self.drive.grabing()
+                self.drive.rising_arm()
+                while True:
+                    print("waiting")
             
             
         
