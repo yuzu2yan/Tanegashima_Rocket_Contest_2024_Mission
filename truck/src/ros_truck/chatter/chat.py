@@ -9,7 +9,7 @@ class Truck_Node(Node):
         super().__init__('node_truck')
         self.publisher_ = self.create_publisher(Int32, 'truck_pub', 10)
         self.timer_ = self.create_timer(0.5, self.timer_callback)
-        self.subscription = self.create_subscription(Int32, 'truck_sub', self.listener_callback, 10)
+        self.subscription = self.create_subscription(Int32, 'arm_pub', self.listener_callback, 10)
         self.subscription
 
     def listener_callback(self, msg):
