@@ -1,23 +1,34 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float64MultiArray
+from std_msgs.msg import Int32
 
-class Listener(Node):
+class Arm_Node(Node):
 
     def __init__(self):
-        super().__init__('listener')
-        self.subscription_ = self.create_subscription(
-            Float64MultiArray, 'chatter', self.listener_callback, 10)
-        self.subscription_
+        self.num = 0
+        super().__init__('node_arm')
+        self.publisher_ = self.create_publisher(Int32, 'number', 10)
+        self.timer_ = self.create_timer(0.5, self.send_message(self.num))
+        self.subscription = self.create_subscription(Int32, 'number', self.receive_message, 10)
+        self.subscription
 
-    def listener_callback(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
+    def receive_message(self, msg):
+        self.get_logger().info('Received: "%s"' % msg.data)
+        if msg.data == 1:
+            self.num += 1
+            self.get_logger().info('Sent:', msg.data)
+
+    def send_message(self):
+        msg = Int32()
+        msg.data = self.num
+        self.publisher_.publish(msg)
+        self.get_logger().info('Sent: "%s"' % msg.data)
 
 def main(args=None):
     rclpy.init(args=args)
-    listener = Listener()
-    rclpy.spin(listener)
-    listener.destroy_node()
+    node = Arm_Node()
+    rclpy.spin(node)
+    node.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':
