@@ -5,7 +5,7 @@ from geometry_msgs.msg import PoseArray
 class ArucoPoseSubscriber(Node):
 
     def __init__(self):
-        super().__init__('aruco_pose_subscriber')
+        super().__init__('load_sample_subscriber')
         self.subscription = self.create_subscription(
             PoseArray,
             '/aruco_poses',
@@ -25,14 +25,17 @@ class ArucoPoseSubscriber(Node):
             # self.get_logger().info('Orientation: x=%f, y=%f, z=%f, w=%f' % (orientation.x, orientation.y, orientation.z, orientation.w))
             if position.z < 0.07:
                 print("back")
-            elif position.x > 0.08:
+            elif position.x > 0.05:
                 print("go right")
-            elif position.x < -0.08:
+            elif position.x < -0.05:
                 print("go left")
             elif position.z > 0.12:
                 print("go straight")
             else:
                 print("stop")
+                self.drive.arm_sep()
+                while True:
+                    print("waiting")
             
             
         

@@ -9,7 +9,7 @@ from geometry_msgs.msg import PoseArray
 class ArucoPoseSubscriber(Node):
 
     def __init__(self):
-        super().__init__('aruco_pose_subscriber')
+        super().__init__('collect_sample_subscriber')
         self.subscription = self.create_subscription(
             PoseArray,
             '/aruco_poses',
@@ -33,10 +33,10 @@ class ArucoPoseSubscriber(Node):
             if position.z < 0.07:
                 print("back")
                 self.drive.back()
-            elif position.x > 0.08:
+            elif position.x > 0.05:
                 print("go right")
                 self.drive.turn_right()
-            elif position.x < -0.08:
+            elif position.x < -0.05:
                 print("go left")
                 self.drive.turn_left()
             elif position.z > 0.12:

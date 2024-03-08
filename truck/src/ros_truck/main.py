@@ -1,25 +1,22 @@
 """""""""""""""""""""""""""""""""""
     TANEGASHIMA ROCKET CONTEST 2024
-    FUKAWANI EXPRESS MAIN PROGRAM
+    FUKAWANI EXPRESS TRUCK MAIN PROGRAM
     
     Author : Yuzu
     Language : Python Ver.3.9.2
-    Last Update : 02/17/2024
+    Last Update : 03/06/2024
 """""""""""""""""""""""""""""""""""
 
-
-import GYSFDMAXB
-import motor
-import ground
-import floating
-import img_proc
+from sensors import gnss
+from ground import motor
+from ground import ground
+from floating import floating
+from img_processing import img_proc
 import logger
 import time
 import datetime
 import csv
 
-# destination point(lon, lat)
-DESTINATION = [139.987610, 40.142635]
 
 
 print("Hello World!!")
@@ -125,7 +122,6 @@ while phase == 1:
     drive.servo() # Separation mechanism activated
     break
 
-#TODO 分離機構の制御を考える
 drive.forward()
 time.sleep(15)
 drive.stop()
