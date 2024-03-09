@@ -1,9 +1,9 @@
+from rclpy.node import Node 
 import rclpy
-from rclpy.node import Node as Node_truck
 from std_msgs.msg import Float64MultiArray
 from std_msgs.msg import Int32
 
-class Truck_Node(Node_truck):
+class Truck_Node(Node):
 
     def __init__(self):
         '''
@@ -39,8 +39,8 @@ class Truck_Node(Node_truck):
         self.publisher_.publish(msg)
         self.get_logger().info('Sent: "%s"' % msg.data)
 
-def main(args=None):
-    rclpy.init(args=args)
+def main():
+    rclpy.init()
     node = Truck_Node()
     rclpy.spin(node)
     node.destroy_node()

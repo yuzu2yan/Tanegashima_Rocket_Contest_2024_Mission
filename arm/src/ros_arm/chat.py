@@ -1,10 +1,10 @@
+from rclpy.node import Node 
 import rclpy
-from rclpy.node import Node_arm
 from std_msgs.msg import Float64MultiArray
 from std_msgs.msg import Int32
 import gnss
 
-class Arm_Node(Node_arm):
+class Arm_Node(Node):
 
     def __init__(self):
         '''
@@ -45,8 +45,8 @@ class Arm_Node(Node_arm):
         self.locate_publisher.publish(msg)
         self.get_logger().info('Sent: "%s"' % msg.data)
 
-def main(args=None):
-    rclpy.init(args=args)
+def main():
+    rclpy.init()
     node = Arm_Node()
     node.state = 3
     rclpy.spin(node)
