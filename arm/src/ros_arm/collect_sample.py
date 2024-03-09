@@ -3,7 +3,6 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseArray
 import time
-import chat
 
 class ArucoPoseSubscriber(Node):
 
@@ -55,11 +54,6 @@ class ArucoPoseSubscriber(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = chat.Arm_Node()
-    rclpy.spin(node)
-    while node.state != 3:
-        print("waiting")
-        pass
     aruco_pose_subscriber = ArucoPoseSubscriber()
     rclpy.spin(aruco_pose_subscriber)
     aruco_pose_subscriber.destroy_node()

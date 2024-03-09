@@ -14,8 +14,8 @@ class Arm_Node(Node):
         state 3: load the sample and head to goal
         '''
         self.state = 0
-        self.long = 130.0
-        self.lat = 10.0
+        self.long = 100.0
+        self.lat = 100.0
         super().__init__('node_arm')
         self.state_publisher = self.create_publisher(Int32, 'arm_state', 10)
         self.timer_1 = self.create_timer(0.5, self.timer1_callback)

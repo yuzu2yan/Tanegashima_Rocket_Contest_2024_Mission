@@ -37,6 +37,9 @@ def cal_heading_ang():
         """
         data = [magX, magY, magZ, accelX, accelY, accelZ, accel, calib_mag, calib_accel]
         """
+        if data[5] < 0:
+            data[0] = -data[0]
+            data[1] = -data[1]
         hearding_ang = np.degrees(np.arctan2(data[1], data[0]))
         if hearding_ang < 0:
             hearding_ang += 360
@@ -69,15 +72,15 @@ des = [0,0]
 
 
 if __name__ == '__main__':
-    drive = motor.Motor()
+    # drive = motor.Motor()
     while True:
-        drive.forward()
+        # drive.forward()
         gps = gnss.read_GPSData()
         distance = cal_distance(gps[0], gps[1], des[0], des[1])
         print("distance :", distance)
         if distance < 3:
             print("end")
-            drive.stop()
+            # drive.stop()
             break
         time.sleep(0.2)
         data = is_heading_goal(gps, des)
@@ -85,7 +88,9 @@ if __name__ == '__main__':
             print("Heading Goal!!")
         else:
             if data[4] == 'Turn Right':
-                drive.turn_right()
+                # drive.turn_right()
+                print("turn right")
             elif data[4] == 'Turn Left':
-                drive.turn_left()
+                # drive.turn_left()
+                print("turn left")
         time.sleep(0.5)

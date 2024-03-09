@@ -4,7 +4,7 @@
     
     Author : Yuzu
     Language : Python Ver.3.9.2
-    Last Update : 03/09/2024
+    Last Update : 03/10/2024
 """""""""""""""""""""""""""""""""""
 
 
@@ -14,7 +14,7 @@ import time
 import datetime
 import csv
 import yaml
-import cv2
+# import cv2
 import rclpy
 from rclpy.node import Node
 # from pycoral.adapters.common import input_size
@@ -33,7 +33,7 @@ import chat
 
 print("Hello World!!")
 now = datetime.datetime.now()
-directory_path = "./../data/" + now.strftime('%Y%m%d %H:%M:%S')
+directory_path = "./data/" + now.strftime('%Y%m%d %H:%M:%S')
 if not os.path.exists(directory_path):
     os.makedirs(directory_path)
 error_log = logger.ErrorLogger(directory_path)
@@ -149,6 +149,7 @@ drive.descending() # Separation mechanism activate and descent detection
 drive.stop()
 if bno055.read_Mag_AccelData()[5] < 0:
     upside_down = True
+    print("upside down")
 else:
     upside_down = False
     drive.rising()
@@ -158,10 +159,9 @@ else:
 reach_sample = False
 phase = 2
 print("phase : ", phase)
-node.state = 2 # landing and head to sample
+node.state = 1 # landing and head to sample
 ground_log = logger.GroundLogger(directory_path)
 ground_log.state = 'Normal'
-img_proc_log = logger.ImgProcLogger(directory_path)
     
 
 while not reach_sample:
