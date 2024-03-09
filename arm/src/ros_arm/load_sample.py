@@ -15,8 +15,7 @@ class ArucoPoseSubscriber(Node):
         self.subscription  # prevent unused variable warning
         self.drive = motor.Motor()
         self.drive.stop()
-        self.drive.arm_sep()
-        self.collect_sample = False
+        self.load_sample = False
 
     def aruco_pose_callback(self, msg):
         # obtain position and posture information of Arco Marker
@@ -43,10 +42,8 @@ class ArucoPoseSubscriber(Node):
             else:
                 print("stop")
                 self.drive.stop()
-                self.drive.down_arm()
-                self.drive.grabing()
-                self.drive.rising_arm()
-                self.collect_sample = True
+                self.drive.arm_sep()
+                self.load_sample = True
         
 
 
