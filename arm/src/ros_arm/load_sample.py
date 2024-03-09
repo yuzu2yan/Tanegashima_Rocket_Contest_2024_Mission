@@ -31,10 +31,10 @@ class ArucoPoseSubscriber(Node):
             if position.z < 0.065:
                 print("back")
                 self.drive.back()
-            elif position.x > 0.018:
+            elif position.x > 0.025:
                 print("go right")
                 self.drive.turn_right()
-            elif position.x < -0.018:
+            elif position.x < -0.025:
                 print("go left")
                 self.drive.turn_left()
             elif position.z > 0.087:
