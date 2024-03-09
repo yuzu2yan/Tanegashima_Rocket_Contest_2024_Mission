@@ -2,6 +2,7 @@ import motor
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseArray
+import time
 
 class ArucoPoseSubscriber(Node):
 
@@ -42,6 +43,7 @@ class ArucoPoseSubscriber(Node):
             else:
                 print("stop")
                 self.drive.stop()
+                time.sleep(1)
                 self.drive.arm_sep()
                 self.load_sample = True
         
