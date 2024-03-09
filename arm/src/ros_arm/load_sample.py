@@ -37,7 +37,7 @@ class ArucoPoseSubscriber(Node):
             elif position.x < -0.025:
                 print("go left")
                 self.drive.turn_left()
-            elif position.z > 0.9:
+            elif position.z > 0.09:
                 print("go straight")
                 self.drive.forward()
             else:
