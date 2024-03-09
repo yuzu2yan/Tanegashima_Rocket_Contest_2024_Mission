@@ -18,9 +18,9 @@ class FloatingLogger(object):
           Error
     """
 
-    def __init__(self):
+    def __init__(self, directory_path):
         now = datetime.datetime.now()
-        FloatingLogger.filename = '/home/astrum/Noshiro_Space_Event_2023/floating/' + now.strftime('%Y%m%d_%H%M%S') + '_floating.csv'
+        FloatingLogger.filename = directory_path + 'floating.csv'
         with open(FloatingLogger.filename, 'w') as f:
             writer = csv.writer(f)
             writer.writerow([now.strftime('%Y%m%d %H:%M:%S')])
@@ -50,58 +50,58 @@ class GroundLogger(object):
           Something Wrong
     """
     
-    def __init__(self):
+    def __init__(self, directory_path):
         now = datetime.datetime.now()
-        GroundLogger.filename = '/home/astrum/Noshiro_Space_Event_2023/ground/' + now.strftime('%Y%m%d_%H%M%S') + '_ground.csv'
+        GroundLogger.filename = directory_path + 'ground.csv'
         with open(GroundLogger.filename, 'w') as f:
             writer = csv.writer(f)
             writer.writerow([now.strftime('%Y%m%d %H:%M:%S')])
             # calib status : 0 ~ 3
-            writer.writerow(['time', 'state', 'distance to goal', 'distance difference','destination angle', 'heading angle','angle difference', 'heading goal', 'direction', 'longtitude', 'latitude', 'magX', 'magY', 'magZ', 'accelX', 'accelY', 'accelZ', 'accel', 'calib status mag', 'calib status accel', 'pre longtitude', 'pre latitude', 'error geomagnetic sensor', 'error heading counter','description'])
+            writer.writerow(['time', 'state', 'distance to goal', 'destination angle', 'heading angle','angle difference', 'heading goal', 'direction', 'longtitude', 'latitude', 'magX', 'magY', 'magZ', 'accelX', 'accelY', 'accelZ', 'accel', 'calib status mag', 'calib status accel'])
         f.close()
     
-    def ground_logger(self, data, distance, error_mag=False, error_heading=0, pre_gps=[0,0], diff_distance=0, description=''):
+    def ground_logger(self, data, distance):
         with open(GroundLogger.filename, 'a') as f:
             now = datetime.datetime.now()
             writer = csv.writer(f)
-            writer.writerow([now.strftime('%H:%M:%S'), self.state, distance, diff_distance] + data + pre_gps + [error_mag, error_heading, description])
+            writer.writerow([now.strftime('%H:%M:%S'), self.state, distance] + data)
 
-    def end_of_ground_phase(self, discription='Start Image Processing'):
+    def end_of_ground_phase(self):
         with open(GroundLogger.filename, 'a') as f:
             now = datetime.datetime.now()
             writer = csv.writer(f)
-            writer.writerow([now.strftime('%H:%M:%S'), self.state, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '','', discription])
+            writer.writerow([now.strftime('%H:%M:%S'), 'Start Image Processing'])
         f.close()
         
 class ImgProcLogger(object):
     filename = ''
     """
-    cone location Front
-                  Right
-                  Left
-                  Not Found
+    cone location center
+                  right
+                  left
+                  not found
     """
-    def __init__(self):
+    def __init__(self, directory_path):
         now = datetime.datetime.now()
-        ImgProcLogger.filename = '/home/astrum/Noshiro_Space_Event_2023/img_proc/' + now.strftime('%Y%m%d_%H%M%S') + '_img_proc.csv'
+        ImgProcLogger.filename = directory_path + 'img_proc.csv'
         with open(ImgProcLogger.filename, 'w') as f:
             writer = csv.writer(f)
             writer.writerow([now.strftime('%Y%m%d %H:%M:%S')])
-            writer.writerow(['time', 'cone place', 'img name', 'processed img name', 'percentage of cone in img', 'Distance to goal', 'distance difference','longtitude', 'latitude', 'pre longtitude', 'pre latitude', 'discription'])
+            writer.writerow(['time', 'cone place', 'distance to goal', 'percent', 'ditected img name', 'tof image name'])
         f.close()
         
-    def img_proc_logger(self, img_name, proc_img_name, cone_loc, p, distance, gps, pre_gps=[0,0], diff_distance=0,description=''):
+    def img_proc_logger(self, cone_place, distance, percent, ditected_img_name, tof_img_name):
         with open(ImgProcLogger.filename, 'a') as f:
             now = datetime.datetime.now()
             writer = csv.writer(f)
-            writer.writerow([now.strftime('%H:%M:%S'), cone_loc, img_name, proc_img_name, p, distance, diff_distance] + gps + pre_gps + [description])
+            writer.writerow([now.strftime('%H:%M:%S'), cone_place, distance, percent, ditected_img_name, tof_img_name])
         f.close()    
     
     def end_of_img_proc_phase(self):
         with open(ImgProcLogger.filename, 'a') as f:
             now = datetime.datetime.now()
             writer = csv.writer(f)
-            writer.writerow([now.strftime('%H:%M:%S'), '', '', '', '', '', '', '', '', '', 'Reach the goal'])
+            writer.writerow([now.strftime('%H:%M:%S'), 'Reach the goal'])
         f.close()
         
 class ErrorLogger(object):
@@ -111,9 +111,9 @@ class ErrorLogger(object):
           Ground
           Image Processing
     """
-    def __init__(self):
+    def __init__(self, directory_path):
         now = datetime.datetime.now()
-        ErrorLogger.filename = '/home/astrum/Noshiro_Space_Event_2023/error/' + now.strftime('%Y%m%d_%H%M%S') + '_error.csv'
+        ErrorLogger.filename = directory_path + 'error.csv'
         with open(ErrorLogger.filename, 'w') as f:
             writer = csv.writer(f)
             writer.writerow([now.strftime('%Y%m%d %H:%M:%S')])
@@ -127,52 +127,17 @@ class ErrorLogger(object):
             writer.writerow([now.strftime('%H:%M:%S'), phase, 'Altitude value decreases during ascent','pressure', data[0], 'temperature', data[1],'altitude', data[2]])
         f.close()
         
-    def geomag_error_logger(self, phase, data):
+    def img_proc_error_logger(self, phase, distance=0):
         with open(ErrorLogger.filename, 'a') as f:
             now = datetime.datetime.now()
             writer = csv.writer(f)
-            writer.writerow([now.strftime('%H:%M:%S'), phase, 'The accuracy of the geomagnetic sensor is not good','destination angle', data[0], 'heading angle', data[1],'angle difference', data[2], 'magX', data[7], 'magY', data[8], 'magZ', data[9], 'accelX', data[10], 'accelY', data[11], 'accelZ', data[12], 'accel', data[13], 'calib status mag', data[14]])
+            writer.writerow([now.strftime('%H:%M:%S'), phase, 'distance', distance, 'Image processing failed'])
         f.close()
         
-    def heading_error_logger(self, phase, pre_gps, gps, pre_distance, distance, error_mag=False, error_heading=0):
-        with open(ErrorLogger.filename, 'a') as f:
-            now = datetime.datetime.now()
-            writer = csv.writer(f)
-            writer.writerow([now.strftime('%H:%M:%S'), phase, 'previous longtitude', pre_gps[0], 'previous latitude', pre_gps[1], 'longtitude', gps[0], 'latitude', gps[1], 'previous distance', pre_distance, 'distance', distance, 'error geomagnetic sensor', error_mag, 'error heading counter', error_heading, 'The heading direction is not correct'])
-        f.close()
-        
-    def gps_error_logger(self, phase, pre_gps, gps, pre_distance, distance, error_mag=False, error_heading=0):
-        with open(ErrorLogger.filename, 'a') as f:
-            now = datetime.datetime.now()
-            writer = csv.writer(f)
-            writer.writerow([now.strftime('%H:%M:%S'), phase, 'previous longtitude', pre_gps[0], 'previous latitude', pre_gps[1], 'longtitude', gps[0], 'latitude', gps[1], 'previous distance', pre_distance, 'distance', distance, 'error geomagnetic sensor', error_mag, 'error heading counter', error_heading, 'Poor GPS accuracy'])
-        f.close()
-        
-    def far_error_logger(self, phase, gps, distance, error_heading=0):
-        with open(ErrorLogger.filename, 'a') as f:
-            now = datetime.datetime.now()
-            writer = csv.writer(f)
-            writer.writerow([now.strftime('%H:%M:%S'), phase, 'longtitude', gps[0], 'latitude', gps[1], 'distance', distance, 'error heading counter', error_heading,'The rover is far from the goal'])
-        f.close()
-        
-    def img_proc_error_logger(self, phase, error_mag=False, error_heading=0, distance=0):
-        with open(ErrorLogger.filename, 'a') as f:
-            now = datetime.datetime.now()
-            writer = csv.writer(f)
-            writer.writerow([now.strftime('%H:%M:%S'), phase, 'error geomagnetic sensor', error_mag, 'error heading counter', error_heading, 'distance', distance, 'Image processing failed'])
-        f.close()
-        
-    def not_found_error_logger(self, phase, img_name, proc_img_name, p, not_found, data, pre_gps=[0,0], error_mag=False, error_heading=0):
-        with open(ErrorLogger.filename, 'a') as f:
-            now = datetime.datetime.now()
-            writer = csv.writer(f)
-            writer.writerow([now.strftime('%H:%M:%S'), phase, 'Cone not found', 'img name', img_name, 'processed img name', proc_img_name, 'percentage of cone in img', p, 'not found counter', not_found, 'destination angle', data[0], 'heading angle', data[1],'angle difference', data[2], 'heading goal', data[3], 'direction', data[4], 'longtitude', data[5], 'latitude', data[6], 'previous longtitude', pre_gps[0], 'previous latitude', pre_gps[1], 'magX', data[7], 'magY', data[8], 'magZ', data[9], 'accelX', data[10], 'accelY', data[11], 'accelZ', data[12], 'accel', data[13], 'calib status mag', data[14], 'calib status accel', data[15], 'error geomagnetic sensor', error_mag, 'error heading counter', error_heading])
-        f.close()
-        
-    def all_sensor_error_logger(self, phase, error_mag, error_heading, error_img_proc):
-        with open(ErrorLogger.filename, 'a') as f:
-            now = datetime.datetime.now()
-            writer = csv.writer(f)
-            writer.writerow([now.strftime('%H:%M:%S'), phase, 'All sensor error', 'error geomagnetic sensor', error_mag, 'error heading counter', error_heading, 'error image processing', error_img_proc])
-        f.close()
+    # def not_found_error_logger(self, phase):
+    #     with open(ErrorLogger.filename, 'a') as f:
+    #         now = datetime.datetime.now()
+    #         writer = csv.writer(f)
+    #         writer.writerow([now.strftime('%H:%M:%S'), phase, 'Cone not found', 'img name', img_name, 'processed img name', proc_img_name, 'percentage of cone in img', p, 'not found counter', not_found, 'destination angle', data[0], 'heading angle', data[1],'angle difference', data[2], 'heading goal', data[3], 'direction', data[4], 'longtitude', data[5], 'latitude', data[6], 'previous longtitude', pre_gps[0], 'previous latitude', pre_gps[1], 'magX', data[7], 'magY', data[8], 'magZ', data[9], 'accelX', data[10], 'accelY', data[11], 'accelZ', data[12], 'accel', data[13], 'calib status mag', data[14], 'calib status accel', data[15], 'error geomagnetic sensor', error_mag, 'error heading counter', error_heading])
+    #     f.close()
         

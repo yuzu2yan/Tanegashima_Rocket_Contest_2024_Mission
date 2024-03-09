@@ -8,8 +8,8 @@ REG_OLATA = 0x14 # GPA output latch register
 REG_OLATB = 0x15 # GPB output latch register
 
 # pigpio library : https://abyz.me.uk/rpi/pigpio/python.html
-rised_switch = [10, 11] # forward, rear
-downed_switch = [9, 13] # forward, rear
+rised_switch = [10, 11] # forward, rear only 9
+downed_switch = [9, 13] # forward, rear only 10
 
 class Motor(object):
     def __init__(self):
@@ -59,26 +59,28 @@ class Motor(object):
         print("stop")
         
     def rising(self):
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00101000)
-        while Motor.pi.read(rised_switch[0]) == 0 or Motor.pi.read(rised_switch[1]) == 0:
-            if Motor.pi.read(rised_switch[0]) == 1:
-                Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00100000)
-            if Motor.pi.read(rised_switch[1]) == 1:
-                Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00001000)        
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
+        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00101000)
+        # while Motor.pi.read(rised_switch[0]) == 0 or Motor.pi.read(rised_switch[1]) == 0:
+            # if Motor.pi.read(rised_switch[0]) == 1:
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00100000)
+            # if Motor.pi.read(rised_switch[1]) == 1:
+        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00001000) 
+        # time.sleep(2)       
+        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
         
     def descending(self):
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010100)
         while Motor.pi.read(downed_switch[0]) == 0 or Motor.pi.read(downed_switch[1]) == 0:
             if Motor.pi.read(downed_switch[0]) == 1:
                 Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010000)
-            if Motor.pi.read(downed_switch[1]) == 1:
-                Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00000100)        
+        time.sleep(2)        
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
         
-    def attach_para(self):
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x08)
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0x00)
+    def attach_para_forward(self):
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00100000)
+    
+    def attach_para_rear(self):
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00001000) 
         
 
 if __name__ == '__main__':
@@ -101,6 +103,10 @@ if __name__ == '__main__':
             drive.rising()
         elif c == 'o':
             drive.descending()
+        elif c == 'af':
+            drive.attach_para_forward()
+        elif c == 'ar':
+            drive.attach_para_rear()
         elif c == 'z':
             break
         else:

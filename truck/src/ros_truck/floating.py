@@ -1,12 +1,10 @@
 import bme280
-import time
 import motor
+import time
 
 SEA_LEVEL_PRESSURE = 1013.25
 
 def cal_altitude(init_altitude):
-    bme280.read_BaroData() # discard the first value
-    time.sleep(0.1)
     data = bme280.read_BaroData()
     """
     data[0] = pressure
@@ -46,4 +44,4 @@ if __name__ == '__main__':
             if altitude <= 3:
                 state = 'Landing'
             time.sleep(0.1)
-        drive.servo() # Separation mechanism activated
+        drive.separate() # Separation mechanism activated

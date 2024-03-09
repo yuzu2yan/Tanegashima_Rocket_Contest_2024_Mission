@@ -31,12 +31,12 @@ class Motor(object):
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0x00)
     
     def forward(self):
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00000110)
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00001001)
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00000110)                                                                              
         print("forward")
         
     def back(self):
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00001001)
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00000110)
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0b00001001)                                                                              
         print("back")
         

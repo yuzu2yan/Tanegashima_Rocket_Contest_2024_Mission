@@ -1,8 +1,5 @@
-import sys
-sys.path.append('../movement/')
 import motor
 import rclpy
-
 from rclpy.node import Node
 from geometry_msgs.msg import PoseArray
 
@@ -19,14 +16,15 @@ class ArucoPoseSubscriber(Node):
         self.drive = motor.Motor()
         self.drive.stop()
         self.drive.arm_sep()
+        self.collect_sample = False
 
     def aruco_pose_callback(self, msg):
-        # アルコマーカーの位置と姿勢情報を取得
+        # obtain position and posture information of Arco Marker
+        
         for pose in msg.poses:
             position = pose.position
             orientation = pose.orientation
 
-            # 取得した情報を表示
             # self.get_logger().info('Aruco Marker Pose:')
             self.get_logger().info('Position: x=%f, y=%f, z=%f' % (position.x, position.y, position.z))
             # self.get_logger().info('Orientation: x=%f, y=%f, z=%f, w=%f' % (orientation.x, orientation.y, orientation.z, orientation.w))
@@ -45,22 +43,17 @@ class ArucoPoseSubscriber(Node):
             else:
                 print("stop")
                 self.drive.stop()
+                self.drive.down_arm()
                 self.drive.grabing()
                 self.drive.rising_arm()
-                while True:
-                    print("waiting")
-            
-            
+                self.collect_sample = True
         
 
 
 def main(args=None):
     rclpy.init(args=args)
-
     aruco_pose_subscriber = ArucoPoseSubscriber()
-
     rclpy.spin(aruco_pose_subscriber)
-
     aruco_pose_subscriber.destroy_node()
     rclpy.shutdown()
 
