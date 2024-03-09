@@ -56,7 +56,7 @@ class Motor(object):
     def stop(self):
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATB, 0x00)
-        print("stop")
+        print("stop") 
         
     def rising(self):
         # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00101000)
@@ -69,12 +69,12 @@ class Motor(object):
         # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
         
     def descending(self):
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010100)
-        while Motor.pi.read(downed_switch[0]) == 0 or Motor.pi.read(downed_switch[1]) == 0:
-            if Motor.pi.read(downed_switch[0]) == 1:
-                Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010000)
-        time.sleep(2)        
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
+        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010100)
+        # while Motor.pi.read(downed_switch[0]) == 0 or Motor.pi.read(downed_switch[1]) == 0:
+            # if Motor.pi.read(downed_switch[0]) == 1:
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010000)
+        # time.sleep(2)        
+        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
         
     def attach_para_forward(self):
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00100000)
