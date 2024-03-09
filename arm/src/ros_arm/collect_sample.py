@@ -2,6 +2,7 @@ import motor
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseArray
+import time
 
 class ArucoPoseSubscriber(Node):
 
@@ -31,10 +32,10 @@ class ArucoPoseSubscriber(Node):
             if position.z < 0.05:
                 print("back")
                 self.drive.back()
-            elif position.x > 0.025:
+            elif position.x > 0.02:
                 print("go right")
                 self.drive.turn_right()
-            elif position.x < -0.025:
+            elif position.x < -0.02:
                 print("go left")
                 self.drive.turn_left()
             elif position.z > 0.075:
@@ -45,6 +46,7 @@ class ArucoPoseSubscriber(Node):
                 self.drive.stop()
                 self.drive.down_arm()
                 self.drive.grabing()
+                time.sleep(1)
                 self.drive.rising_arm()
                 self.collect_sample = True
         
