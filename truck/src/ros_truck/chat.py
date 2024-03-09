@@ -18,9 +18,9 @@ class Truck_Node(Node):
         super().__init__('node_truck')
         self.publisher_ = self.create_publisher(Int32, 'truck', 10)
         self.timer_ = self.create_timer(0.5, self.timer_callback)
-        self.state_subscription = self.create_subscription(Int32, 'arm', self.state_callback, 10)
+        self.state_subscription = self.create_subscription(Int32, 'arm_state', self.state_callback, 10)
         self.state_subscription
-        self.locate_subscription = self.create_subscription(Float64MultiArray, 'arm', self.locate_callback, 10)
+        self.locate_subscription = self.create_subscription(Float64MultiArray, 'arm_locate', self.locate_callback, 10)
         self.locate_subscription
 
     def state_callback(self, msg):

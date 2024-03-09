@@ -12,7 +12,7 @@ REG_OLATB = 0x15 # GPB output latch register
 # 4,5 つかむ機構のモーター
 sample_switch = [19, 26]
 panto_switch = [9, 10] # down, rise
-sepa_switch = [13, 11] # sepa down
+sepa_switch = [13, 11] # sepa close
 
 class Motor(object):
     def __init__(self):
@@ -59,9 +59,8 @@ class Motor(object):
         print(Motor.pi.read(26)) # sample
         
     def arm_sep(self):
-        # while Motor.pi.read(sepa_switch[0]) == 0:
-        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010000)
-        time.sleep(2)
+        while Motor.pi.read(sepa_switch[0]) == 0:
+            Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010000)
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
         print("separated")
         

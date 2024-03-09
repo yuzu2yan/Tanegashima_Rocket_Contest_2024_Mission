@@ -20,35 +20,35 @@ class ArucoPoseSubscriber(Node):
         self.collect_sample = False
 
     def aruco_pose_callback(self, msg):
-        # obtain position and posture information of Arco Marker
-        
-        for pose in msg.poses:
-            position = pose.position
-            orientation = pose.orientation
+        # obtain position and posture information of Arco Marker  
+        if self.collect_sample != True:
+            for pose in msg.poses:
+                position = pose.position
+                orientation = pose.orientation
 
-            # self.get_logger().info('Aruco Marker Pose:')
-            self.get_logger().info('Position: x=%f, y=%f, z=%f' % (position.x, position.y, position.z))
-            # self.get_logger().info('Orientation: x=%f, y=%f, z=%f, w=%f' % (orientation.x, orientation.y, orientation.z, orientation.w))
-            if position.z < 0.05:
-                print("back")
-                self.drive.back()
-            elif position.x > 0.02:
-                print("go right")
-                self.drive.turn_right()
-            elif position.x < -0.02:
-                print("go left")
-                self.drive.turn_left()
-            elif position.z > 0.075:
-                print("go straight")
-                self.drive.forward()
-            else:
-                print("stop")
-                self.drive.stop()
-                self.drive.down_arm()
-                self.drive.grabing()
-                time.sleep(1)
-                self.drive.rising_arm()
-                self.collect_sample = True
+                # self.get_logger().info('Aruco Marker Pose:')
+                self.get_logger().info('Position: x=%f, y=%f, z=%f' % (position.x, position.y, position.z))
+                # self.get_logger().info('Orientation: x=%f, y=%f, z=%f, w=%f' % (orientation.x, orientation.y, orientation.z, orientation.w))
+                if position.z < 0.05:
+                    self.get_logger().info('back')
+                    self.drive.back()
+                elif position.x > 0.02:
+                    self.get_logger().info('turn right')
+                    self.drive.turn_right()
+                elif position.x < -0.02:
+                    self.get_logger().info('turn left')
+                    self.drive.turn_left()
+                elif position.z > 0.075:
+                    self.get_logger().info('forward')
+                    self.drive.forward()
+                else:
+                    self.get_logger().info('stop')
+                    self.drive.stop()
+                    self.drive.down_arm()
+                    self.drive.grabing()
+                    time.sleep(1)
+                    self.drive.rising_arm()
+                    self.collect_sample = True
         
 
 
