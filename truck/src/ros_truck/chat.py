@@ -1,9 +1,9 @@
 import rclpy
-from rclpy.node import Node
+from rclpy.node import Node_truck
 from std_msgs.msg import Float64MultiArray
 from std_msgs.msg import Int32
 
-class Truck_Node(Node):
+class Truck_Node(Node_truck):
 
     def __init__(self):
         '''

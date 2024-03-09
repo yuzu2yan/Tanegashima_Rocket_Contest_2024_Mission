@@ -1,10 +1,10 @@
 import rclpy
-from rclpy.node import Node
+from rclpy.node import Node_arm
 from std_msgs.msg import Float64MultiArray
 from std_msgs.msg import Int32
 import gnss
 
-class Arm_Node(Node):
+class Arm_Node(Node_arm):
 
     def __init__(self):
         '''
