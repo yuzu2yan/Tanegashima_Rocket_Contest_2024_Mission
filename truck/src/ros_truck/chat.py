@@ -1,5 +1,5 @@
 import rclpy
-from rclpy.node import Node_truck
+from rclpy.node import Node as Node_truck
 from std_msgs.msg import Float64MultiArray
 from std_msgs.msg import Int32
 
