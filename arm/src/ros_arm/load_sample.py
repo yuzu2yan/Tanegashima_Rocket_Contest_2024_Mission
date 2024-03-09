@@ -28,16 +28,16 @@ class ArucoPoseSubscriber(Node):
             # self.get_logger().info('Aruco Marker Pose:')
             self.get_logger().info('Position: x=%f, y=%f, z=%f' % (position.x, position.y, position.z))
             # self.get_logger().info('Orientation: x=%f, y=%f, z=%f, w=%f' % (orientation.x, orientation.y, orientation.z, orientation.w))
-            if position.z < 0.07:
+            if position.z < 0.065:
                 print("back")
                 self.drive.back()
-            elif position.x > 0.05:
+            elif position.x > 0.025:
                 print("go right")
                 self.drive.turn_right()
-            elif position.x < -0.05:
+            elif position.x < -0.025:
                 print("go left")
                 self.drive.turn_left()
-            elif position.z > 0.12:
+            elif position.z > 0.9:
                 print("go straight")
                 self.drive.forward()
             else:
