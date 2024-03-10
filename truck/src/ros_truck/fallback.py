@@ -15,7 +15,8 @@ import datetime
 import csv
 import yaml
 # import cv2
-import rclpy
+# import rclpy
+# from rclpy.node import Node
 # from pycoral.adapters.common import input_size
 # from pycoral.adapters.detect import get_objects
 # from pycoral.utils.dataset import read_label_file
@@ -42,9 +43,9 @@ drive.stop()
 with open('settings.yaml') as yml:
     settings = yaml.safe_load(yml)
 des = [settings['destination']['longitude'], settings['destination']['latitude']]
-rclpy.init()
-node = chat.Truck_Node()
-rclpy.spin(node)
+# rclpy.init()
+# node = chat.Truck_Node()
+# rclpy.spin(node)
 
 
 """
@@ -55,161 +56,10 @@ phase 1 : Floating
       5 : Reach the goal
 """
 
-
-"""
-Floating Phase
-"""
-phase = 2 # TODO change
-if phase == 1:
-    print("phase : ", phase)
-    floating_log = logger.FloatingLogger(directory_path)
-    """
-    state 
-        Rising
-        Falling
-        Landing
-        Error
-    """
-    state = 'Rising'
-    floating_log.state = 'Rising'
-    start = time.time()
-    # The flag that identifies abnormalities in the barometric pressure sensor
-    error_baro = 0
-    init_altitude = 0
-    data = floating.cal_altitude(init_altitude)
-    init_altitude = data[2]
-    altitude = init_altitude
-    print("initial altitude : {}." .format(init_altitude))
-    floating_log.floating_logger(data)
-    print("Rising phase")
-while phase == 1:
-    while state == 'Rising':
-        data = floating.cal_altitude(init_altitude)
-        altitude = data[2]
-        floating_log.floating_logger(data)
-        print("Rising")
-        # Incorrect sensor value
-        if altitude < -5:
-            error_baro += 1
-            if error_baro >= 15:
-                state = 'Error'
-                floating_log.state = 'Error'
-                error_log.baro_error_logger(phase, data)
-                print("Error : Altitude value decreases during ascent")
-            time.sleep(1.5)
-            continue
-        if altitude >= 25:
-            state = 'Ascent Completed'
-            floating_log.state = 'Ascent Completed'
-        now = time.time()
-        if now - start > 480:
-            print('8 minutes passed')
-            state = 'Landing'
-            floating_log.state = 'Landing'
-            floating_log.end_of_floating_phase('Landing judgment by passage of time.')
-            break
-        print("altitude : {}." .format(altitude))
-        time.sleep(1.5)
-    while state == 'Ascent Completed':
-        data = floating.cal_altitude(init_altitude)
-        altitude = data[2]
-        floating_log.floating_logger(data)
-        print("Falling")
-        if altitude <= 2:
-            state = 'Landing'
-            floating_log.state = 'Landing'
-            floating_log.end_of_floating_phase()
-        now = time.time()
-        if now - start > 480:
-            print('8 minutes passed')
-            state = 'Landing'
-            floating_log.state = 'Landing'
-            floating_log.end_of_floating_phase('Landing judgment by passage of time.')
-            break
-        print("altitude : {}." .format(altitude))
-        time.sleep(0.2)
-    while state == 'Error':
-        data = floating.cal_altitude(init_altitude)
-        altitude = data[2]
-        floating_log.floating_logger(data)
-        now = time.time()
-        if now - start > 480:
-            print('8 minutes passed')
-            state = 'Landing'
-            floating_log.state = 'Landing'
-            floating_log.end_of_floating_phase('Landing judgment by passage of time.')
-            break
-        time.sleep(1)
-    print("Landing")
-    break
-
-
-drive.descending() # Separation mechanism activate and descent detection
-drive.stop()
-if bno055.read_Mag_AccelData()[5] < 0:
-    upside_down = True
-    print("upside down")
-else:
-    upside_down = False
-    drive.rising()
-
-
-# Head to sample(arm) position
-reach_sample = False
-phase = 2
-print("phase : ", phase)
-node.state = 1 # landing and head to sample
-ground_log = logger.GroundLogger(directory_path)
-ground_log.state = 'Normal'
-    
-
-while not reach_sample:
-    while gnss.read_GPSData() == [0,0]:
-            print("Waiting for GPS reception")
-            time.sleep(5)
-    gps = gnss.read_GPSData()
-    data = ground.is_heading_goal(gps, [node.long, node.lat])
-    distance = ground.cal_distance(gps[0], gps[1], node.long, node.lat)
-    print("distance : ", distance)
-    ground_log.ground_logger(data, distance)
-    # Reach sample judgment
-    if distance <= 3: # Reach the sample within 3m
-        print("Close to the sample")
-        ground_log.end_of_ground_phase()
-        reach_sample = True
-        phase = 3
-        break
-    count = 0
-    while data[3] != True: # Not heading the sample
-        if count > 7 or distance <= 3:
-            break
-        if data[4] == 'Turn Right':
-            drive.turn_right()
-        elif data[4] == 'Turn Left':
-            drive.turn_left()
-        time.sleep(0.3)
-        drive.forward()
-        gps = gnss.read_GPSData()
-        distance = ground.cal_distance(gps[0], gps[1], node.long, node.lat)
-        print("distance : ", distance)
-        data = ground.is_heading_goal(gps, [node.long, node.lat])
-        ground_log.ground_logger(data, distance)
-        count += 1
-    # End of Orientation Correction
-
-# Reach the sample    
-drive.stop()
-node.state = 2
-
-# Wait loading sample
-while node.state != 3:
-    print("waiting")
-    time.sleep(3)
-
-
 # Head to the goal
 reach_goal = False
 phase = 3
+ground_log = logger.GroundLogger(directory_path)
 # img_proc_log = logger.ImgProcLogger(directory_path) 
 # cap = cv2.VideoCapture(0) # /dev/video0
 # if cap.isOpened() == False:
@@ -310,5 +160,5 @@ while not reach_goal:
 
 # cap.release()
 # cv2.destroyAllWindows()
-node.destroy_node()
-rclpy.shutdown()
+# node.destroy_node()
+# rclpy.shutdown()
