@@ -60,13 +60,13 @@ class Motor(object):
         
     def rising(self):
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00101000)
-        # while Motor.pi.read(rised_switch[0]) == 0 or Motor.pi.read(rised_switch[1]) == 0:
-            # if Motor.pi.read(rised_switch[0]) == 1:
-        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00100000)
-            # if Motor.pi.read(rised_switch[1]) == 1:
-        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00001000) 
-        # time.sleep(2)       
-        # Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
+        while Motor.pi.read(rised_switch[0]) == 0 or Motor.pi.read(rised_switch[1]) == 0:
+            if Motor.pi.read(rised_switch[0]) == 1:
+                Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00100000)
+            if Motor.pi.read(rised_switch[1]) == 1:
+                Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00001000) 
+        time.sleep(2)       
+        Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0x00)
         
     def descending(self):
         Motor.pi.i2c_write_byte_data(Motor._device, REG_OLATA, 0b00010100)

@@ -31,6 +31,7 @@ if __name__ == '__main__':
         hearding_ang = np.degrees(np.arctan2(data[1], data[0]))
         if hearding_ang < 0:
             hearding_ang += 360
+        hearding_ang = (hearding_ang + 180) % 360
         print("heading_ang : ", hearding_ang)
         print("Accelerometer (m/s^2): {}".format(sensor.acceleration))
         print("accel : ", data[6])
