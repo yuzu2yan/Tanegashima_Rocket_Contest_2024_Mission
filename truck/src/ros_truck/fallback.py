@@ -94,10 +94,10 @@ while not reach_goal:
         while data[3] != True: # Not heading the goal
             if count > 7 or distance <= 7:
                 break
-            if data[4] == 'Turn Right':
+            if data[4] == 'Turn Right' or data[4] == 'Turn Left':
                 drive.turn_right()
-            elif data[4] == 'Turn Left':
-                drive.turn_left()
+            # elif data[4] == 'Turn Left':
+            #     drive.turn_left()
             time.sleep(0.3)
             drive.forward()
             gps = gnss.read_GPSData()
