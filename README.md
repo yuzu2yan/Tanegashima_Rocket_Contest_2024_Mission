@@ -86,15 +86,15 @@ Access Point               : TP-Link EAP610-Outdoor
 ## Program Configuration
 ### Arm
 - collect_sample.py  
-  　Detects tag on sample using the marker and automatically collects it
+  Detects tag on sample using the marker and automatically collects it
 - load_sample.py  
-    Detects truck tag using the marker and automatically loads the sample
+  Detects truck tag using the marker and automatically loads the sample
 - gnss.py  
-    Obtains latitude and longitude from a GPS module every second. The acquisition program runs as a daemon.
+  Obtains latitude and longitude from a GPS module every second. The acquisition program runs as a daemon.
 - chat.py  
-    Interact with the truck via ROS topic communication.
+  Interact with the truck via ROS topic communication.
 - motor.py  
-    This class deals with motors, controlling tires and deployment motors.
+  This class deals with motors, controlling tires and deployment motors.
 
 ### Truck
 - main.py  
