@@ -6,8 +6,9 @@
 [![python](https://img.shields.io/badge/-Python-F9DC3E.svg?logo=python&style=flat)](https://www.python.org/)
 [![linux](https://img.shields.io/badge/-Linux-6C6694.svg?logo=linux&style=flat)](https://www.linux.org/)
 [![raspberrypi](https://img.shields.io/badge/-Raspberry%20Pi-C51A4A.svg?logo=raspberry-pi&style=flat)](https://www.raspberrypi.com/)
+## 🥉3rd place in mission division of Tanegashima Rocket Contest 2024🚀!!
 
-This is a project of Team Fukawani Express, CanSat and Mission Division of Tanegashima Rocket Contest 2024. 
+This is a project of Team Fukawani Express, CanSat and Mission Division of Tanegashima Rocket Contest 2024.   
 
 <img width="400px" alt="intro_img" src="https://github.com/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/assets/89567103/36a8ce0d-23ff-42c2-94db-d2784f731f34">
 
@@ -31,6 +32,7 @@ The truck is lifted by crane to 30 meters above the ground and dropped. After a 
 ## Feature
 ### Arm
 
+<img width="400" alt="arm" src="https://raw.github.com/wiki/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/images/arm.gif">
 
 
 Bearings are mounted on the axles of the tires to absorb the shock of landing. In addition, rigidity is secured by using TPU for the tires and CFRP for the body.
