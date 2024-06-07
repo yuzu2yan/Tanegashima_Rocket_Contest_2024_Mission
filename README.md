@@ -32,38 +32,51 @@ The truck is lifted by crane to 30 meters above the ground and dropped. After a 
 ## Feature
 ### Arm
 
+<img width="400px" alt="arm" src="https://raw.github.com/wiki/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/images/arm.gif">
 
-<img width="400px" alt="arm" src="https://raw.github.com/wiki/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/images/detection.gif">
-
-
-
-Bearings are mounted on the axles of the tires to absorb the shock of landing. In addition, rigidity is secured by using TPU for the tires and CFRP for the body.
+- The arm is extended and retracted by a link mechanism
+- Operation detection by microswitch
 
 ### Truck
 
+<img width="400px" alt="arm" src="https://raw.github.com/wiki/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/images/truck.gif">
 
+- Equipped with ride height adjustment mechanism
+- Can be used on both sides
 
-The TPU accelerator allows for 30 object detections per second and goal detection using the Tensorflow framework. 
+### Loading & Sampling
 
+<img width="400px" alt="arm" src="https://raw.github.com/wiki/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/images/loading.gif">
+
+Automatic self-location estimation, loading and sample retrieval
+
+### Self-location Estimation
+
+<img width="400px" alt="arm" src="https://raw.github.com/wiki/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/images/marker.gif">
+
+- Self-location estimation with ArUco markers
+- Sample collection and loading with autonomous movement by tag detection
+
+### Real-Time Object Detection
+
+<img width="400px" alt="arm" src="https://raw.github.com/wiki/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/images/detection.gif">
+
+Real-time goal detection using the Tensorflow framework
 
 ## Software Configuration
 Language : Python 3.9.2  
-OS       : Raspberry Pi OS Lite (32-bit)   
-Raspbian GNU/Linux 11 (bullseye)    
-Kernel   : Ver.5.15    
+OS       : Ubuntu 22.04  
+ROS      : ROS2 Humble   
 OpenCV   : Ver.4.7.0   
-Tensorflow: Ver.2.15.0
+Tensorflow: Ver.2.15.0  
 
 ## Hardware Configuration
 
-Computer                   : Raspberry pi4  
+Computer                   : Raspberry Pi4  
 GPS                        : GYSFDMAXB  
 9-axis sensor              : BNO055  
 Barometric pressure sensor : BME280   
-Vision Camera              : ELP 1080P Global Shutter USB Camera    
-ToF Camera                 : Arducam ToF Camera  
-TPU                        : Coral USB Accelerator  
-Motor Driver               : BD6231F  
+Vision Camera              : ELP 1080P Global Shutter USB Camera
 
 
 ## Program Configuration
