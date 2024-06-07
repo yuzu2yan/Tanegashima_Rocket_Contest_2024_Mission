@@ -31,13 +31,13 @@ The truck is lifted by crane to 30 meters above the ground and dropped. After a 
 ## Feature
 ### Arm
 
-<img width="400" alt="bearing" src="https://github.com/yuzu2yan/Tanegashima_Rocket_Contest_2024_Runback/assets/89567103/3c9b37c9-6141-4e8a-b578-ee44be46fc68">
+
 
 Bearings are mounted on the axles of the tires to absorb the shock of landing. In addition, rigidity is secured by using TPU for the tires and CFRP for the body.
 
 ### Truck
 
-<img width="400" alt="cone_detection" src="https://raw.github.com/wiki/yuzu2yan/Tanegashima_Rocket_Contest_2024_Runback/images/detection.gif">
+
 
 The TPU accelerator allows for 30 object detections per second and goal detection using the Tensorflow framework. 
 
