@@ -31,7 +31,7 @@ The truck is lifted by crane to 30 meters above the ground and dropped. After a 
 | Full Success |- Arm retrieves the sample <br> - Successfully loaded onto a truck|Confirmation by visual inspection and log|
 | Extra Success |Truck travels to destination|Confirmation by visual inspection and log|
 
-## Feature
+## Features
 ### Arm
 
 <img width="400px" alt="arm" src="https://raw.github.com/wiki/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/images/arm.gif">
