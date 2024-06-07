@@ -32,7 +32,9 @@ The truck is lifted by crane to 30 meters above the ground and dropped. After a 
 ## Feature
 ### Arm
 
-<img width="400" alt="arm" src="https://raw.github.com/wiki/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/images/arm.gif">
+
+<img width="400px" alt="arm" src="https://raw.github.com/wiki/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/images/detection.gif">
+
 
 
 Bearings are mounted on the axles of the tires to absorb the shock of landing. In addition, rigidity is secured by using TPU for the tires and CFRP for the body.
