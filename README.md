@@ -12,12 +12,21 @@ This is a project of Team Fukawani Express, CanSat and Mission Division of Taneg
 <img width="400px" alt="intro_img" src="https://github.com/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/assets/89567103/36a8ce0d-23ff-42c2-94db-d2784f731f34">
 
 ## Mission  
-The drone is dropped from 30 m above the ground, decelerated by a parachute, and lands on the ground. The drone aims for a zero-distance goal to a pylon placed at the goal point under autonomous control.  
+Simulate sample returns. After the truck is launched and lands, the arm loads the sample onto the truck. The truck then travels to the destination.
+
+## Mission Sequence  
+The truck is lifted by crane to 30 meters above the ground and dropped. After a soft landing, the truck heads for the recovery point. The arm also heads to the recovery point, collects the sample, and loads it onto the truck. Synchronization between the two vehicles via an access point and communicate via Wi-Fi, and they are controlled by GPS and geomagnetism, while sample collection and loading are guided by position estimation using markers. When approaching the goal point, image processing is used to achieve a zero-distance goal.
 
 <img width="500px" alt="Mission_Overview" src="https://github.com/yuzu2yan/Tanegashima_Rocket_Contest_2024_Mission/assets/89567103/78217d04-819f-4137-8059-ff5c0865a1dd">
 
-## Mission Sequence  
-The program starts when the carrier is loaded, and judges the ascent and landing by the air pressure sensor. In case of a sensor error, the landing judgment is also made over time. After landing, the separation mechanism is activated, and the CanSat uses the geomagnetic sensor and GPS to reach the goal. After approaching the goal, the camera starts image processing and distance measurement, and the program terminates when it judges that the goal has been reached.
+
+## Success Criteria  
+
+| | Statement | Methodology |
+| ---- | ---- |---|
+| Minimum Success |- Truck makes a soft landing <br> - Truck moves to sample|Confirmation by visual inspection and log|
+| Full Success |- Arm retrieves the sample <br> - Successfully loaded onto a truck|Confirmation by visual inspection and log|
+| Extra Success |Truck travels to destination|Confirmation by visual inspection and log|
 
 ## Feature
 ### Arm
@@ -31,14 +40,6 @@ Bearings are mounted on the axles of the tires to absorb the shock of landing. I
 <img width="400" alt="cone_detection" src="https://raw.github.com/wiki/yuzu2yan/Tanegashima_Rocket_Contest_2024_Runback/images/detection.gif">
 
 The TPU accelerator allows for 30 object detections per second and goal detection using the Tensorflow framework. 
-
-## Success Criteria  
-
-| | Statement | Methodology |
-| ---- | ---- |---|
-| Minimum Success |- Truck makes a soft landing <br> - Truck moves to sample|Confirmation by visual inspection and log|
-| Full Success |- Arm retrieves the sample <br> - Successfully loaded onto a truck|Confirmation by visual inspection and log|
-| Extra Success |Truck travels to destination|Confirmation by visual inspection and log|
 
 
 ## Software Configuration
